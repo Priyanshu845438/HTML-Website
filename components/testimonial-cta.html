@@ -99,25 +99,34 @@
                 </div>
                 
                 <!-- Custom Carousel Controls -->
-                <div class="carousel-controls text-end mt-3">
-                  <button class="btn btn-outline-primary rounded-circle me-2" type="button" data-bs-target="#testimonialCardSlider" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
-                  <button class="btn btn-outline-primary rounded-circle" type="button" data-bs-target="#testimonialCardSlider" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+                <div class="carousel-controls d-flex justify-content-center align-items-center mt-4 gap-4">
+                  <button class="carousel-arrow-btn btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center" type="button" data-bs-target="#testimonialCardSlider" data-bs-slide="prev" aria-label="Previous testimonial">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <div class="carousel-indicators-custom d-flex align-items-center gap-2">
+                    <button type="button" data-bs-target="#testimonialCardSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCardSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCardSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <button class="carousel-arrow-btn btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center" type="button" data-bs-target="#testimonialCardSlider" data-bs-slide="next" aria-label="Next testimonial">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Right Part (Optimized CTA) - MERGE CONFLICT RESOLVED -->
-          <div class="col-lg-5 ps-lg-5 text-white text-center text-lg-start">
-            <h1 class="display-3 fw-bold lh-1">Let's Build Your Indian Success Story.</h1>
+          <div class="col-lg-5 col-md-12 ps-lg-5 text-white text-center text-lg-start mt-4 mt-lg-0">
+            <h1 class="display-3 fw-bold lh-1 mb-3">Let's Build Your Indian Success Story.</h1>
             <p class="lead my-4">Our team of experts is ready to understand your goals and create a digital strategy that delivers real, measurable results.</p>
-            <div>
+            <div class="cta-buttons-container d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
               <!-- **Conversion Optimization:** Using the superior, low-friction CTAs. -->
-              <a href="https://calendly.com/acadify-online/30min" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg rounded-pill px-4 me-2 fw-semibold">
+              <a href="https://calendly.com/acadify-online/30min" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg rounded-pill px-4 fw-semibold cta-primary">
                 <i class="bi bi-chat-dots me-2"></i>Get Free Consultation
               </a>
               <!-- **Conversion Optimization:** Using a direct `tel:` link for mobile users. -->
-              <a href="tel:+919999999999" class="btn btn-outline-light btn-lg rounded-pill px-4">
+              <a href="tel:+919999999999" class="btn btn-outline-light btn-lg rounded-pill px-4 cta-secondary">
                 <i class="bi bi-telephone-fill me-2"></i>Talk to an Expert
               </a>
             </div>

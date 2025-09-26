@@ -25,20 +25,62 @@
   position: relative;
 }
 
-/* Carousel controls styling */
-.carousel-controls .btn {
-  width: 40px;
-  height: 40px;
-  border-width: 2px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/* Enhanced Carousel controls styling */
+.carousel-controls {
+  min-height: 60px;
+  align-items: center !important;
 }
 
-.carousel-controls .btn:hover {
+.carousel-arrow-btn {
+  width: 50px !important;
+  height: 50px !important;
+  border-width: 2px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  position: relative;
+}
+
+.carousel-arrow-btn i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.carousel-arrow-btn:hover {
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
-  color: #0d2649;
+  color: white !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Custom carousel indicators */
+.carousel-indicators-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  min-width: 80px;
+}
+
+.carousel-indicators-custom button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--bs-primary);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0;
+}
+
+.carousel-indicators-custom button.active,
+.carousel-indicators-custom button:hover {
+  background-color: var(--bs-primary);
+  transform: scale(1.3);
 }
 
 /* CTA section styling */
@@ -140,38 +182,134 @@
 
   .testimonial-cta-section .display-3 {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
   .testimonial-cta-section .lead {
     font-size: 1rem;
   }
 
-  /* Stack buttons vertically on very small screens */
-  .testimonial-cta-section .btn {
-    display: block;
-    width: 100%;
-    margin: 0.5rem 0;
+  /* Improve button layout on small screens */
+  .cta-buttons-container {
+    margin-top: 1.5rem;
   }
 
-  .testimonial-cta-section .btn.me-2 {
-    margin-right: 0 !important;
+  .cta-primary, .cta-secondary {
+    min-width: 100%;
+    margin: 0.25rem 0;
+  }
+
+  /* Center carousel controls on mobile */
+  .carousel-controls {
+    margin-top: 2rem !important;
+  }
+
+  .carousel-controls .btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Improve card padding on very small screens */
+  .testimonial-cta-section .card {
+    padding: 1rem !important;
   }
 }
 
-/* Improved hover effects */
-.testimonial-cta-section .btn-light:hover {
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
-  color: white;
-  transform: translateY(-2px);
+/* Ultra small screens (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+  .testimonial-cta-section {
+    padding: 1.5rem 0;
+  }
+
+  .testimonial-cta-section .display-3 {
+    font-size: 1.75rem;
+  }
+
+  .testimonial-cta-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-cta-section .lead {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Smaller carousel controls for very small screens */
+  .carousel-controls .btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .carousel-indicators-custom button {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Adjust testimonial avatar size */
+  .testimonial-cta-section .rounded-circle {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+/* Enhanced CTA button styling */
+.cta-buttons-container {
+  margin-top: 2rem;
+}
+
+.cta-primary, .cta-secondary {
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+  font-weight: 600;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Get Free Consultation button styling */
+.cta-primary {
+  background-color: white !important;
+  color: #0d3269 !important;
+  border-color: white !important;
+}
+
+.cta-primary i {
+  color: #0d3269 !important;
+}
+
+/* Enhanced hover effects */
+.testimonial-cta-section .cta-primary:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: var(--bs-primary) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-cta-section .cta-secondary:hover {
+  background-color: white;
+  color: var(--bs-primary) !important;
+  border-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-cta-section .btn-light:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: var(--bs-primary) !important;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-cta-section .btn-outline-light:hover {
   background-color: white;
-  color: var(--bs-primary);
-  transform: translateY(-2px);
+  color: var(--bs-primary) !important;
+  border-color: white;
+  transform: translateY(-3px);
   transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Animation for the overlapping card */
