@@ -257,6 +257,60 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Initialize Testimonial Carousel
+    const testimonialCarousel = document.getElementById('testimonialCardSlider');
+    if (testimonialCarousel) {
+        // Initialize Bootstrap carousel with proper settings
+        const carousel = new bootstrap.Carousel(testimonialCarousel, {
+            interval: 5000, // Auto-slide every 5 seconds
+            ride: 'carousel',
+            wrap: true, // Enable infinite loop
+            keyboard: true, // Enable keyboard navigation
+            pause: 'hover' // Pause on hover
+        });
+
+        // Add event listeners for custom controls
+        const prevBtn = document.querySelector('[data-bs-target="#testimonialCardSlider"][data-bs-slide="prev"]');
+        const nextBtn = document.querySelector('[data-bs-target="#testimonialCardSlider"][data-bs-slide="next"]');
+        const indicators = document.querySelectorAll('[data-bs-target="#testimonialCardSlider"][data-bs-slide-to]');
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                carousel.prev();
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                carousel.next();
+            });
+        }
+
+        // Handle indicator clicks
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', function(e) {
+                e.preventDefault();
+                carousel.to(index);
+            });
+        });
+
+        // Update active indicator when slide changes
+        testimonialCarousel.addEventListener('slide.bs.carousel', function(event) {
+            const activeIndex = event.to;
+            indicators.forEach((indicator, index) => {
+                if (index === activeIndex) {
+                    indicator.classList.add('active');
+                    indicator.setAttribute('aria-current', 'true');
+                } else {
+                    indicator.classList.remove('active');
+                    indicator.removeAttribute('aria-current');
+                }
+            });
+        });
+    }
+
     // Load case studies for home page after components are loaded
     setTimeout(function() {
         loadHomeCaseStudies();

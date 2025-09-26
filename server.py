@@ -7,6 +7,7 @@ Serves static files with proper caching disabled for development.
 import http.server
 import socketserver
 import os
+import socket
 from http.server import SimpleHTTPRequestHandler
 
 class NoCacheHTTPRequestHandler(SimpleHTTPRequestHandler):
@@ -29,7 +30,11 @@ def main():
     # Change to the directory containing the website files
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     
-    with socketserver.TCPServer((HOST, PORT), NoCacheHTTPRequestHandler) as httpd:
+    # Create server with SO_REUSEADDR to handle port reuse
+    class ReuseTCPServer(socketserver.TCPServer):
+        allow_reuse_address = True
+    
+    with ReuseTCPServer((HOST, PORT), NoCacheHTTPRequestHandler) as httpd:
         print(f"Serving HTTP on {HOST} port {PORT} (http://{HOST}:{PORT}/) ...")
         print("Cache control headers enabled for Replit compatibility")
         httpd.serve_forever()
