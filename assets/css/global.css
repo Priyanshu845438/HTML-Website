@@ -844,3 +844,28 @@ html {
         border-color: transparent var(--white) transparent transparent;
     }
 }
+
+/* =====================================
+   PREMIUM GRADIENT UTILITY CLASSES
+   For consistent branding across service pages
+===================================== */
+
+/* Purple gradient for general premium sections */
+.gradient-purple {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* Orange gradient for high-energy sections */
+.gradient-orange {
+    background: linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%) !important;
+}
+
+/* Green gradient for success/growth sections */
+.gradient-green {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
+}
+
+/* Blue gradient as alternative to purple */
+.gradient-blue {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
