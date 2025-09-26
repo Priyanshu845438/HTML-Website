@@ -219,20 +219,18 @@ class ComponentLoader {
 // Initialize component loader
 const componentLoader = new ComponentLoader();
 
-// Function to ensure quote modal is globally available on all pages
-function ensureQuoteModalAvailability() {
-    // Check if quote modal container exists
-    let quoteModalContainer = document.getElementById('quote-modal-container');
-    
-    // If it doesn't exist, create it and append to body
-    if (!quoteModalContainer) {
-        quoteModalContainer = document.createElement('div');
-        quoteModalContainer.id = 'quote-modal-container';
-        document.body.appendChild(quoteModalContainer);
-    }
-    
-    // Load the quote modal component
-    componentLoader.loadComponent('#quote-modal-container', '/components/quote-modal.html');
+// Function to handle Calendly redirects for specific legacy modal triggers
+function handleCalendlyRedirects() {
+    // Redirect specific legacy modal triggers to Calendly
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('[data-bs-target="#quoteModal"]') || 
+            e.target.closest('[data-bs-target="#consultationModal"]') ||
+            e.target.closest('[data-bs-toggle="modal"][data-bs-target*="quote"]') ||
+            e.target.closest('[data-bs-toggle="modal"][data-bs-target*="consultation"]')) {
+            e.preventDefault();
+            window.open('https://calendly.com/acadify-online/30min', '_blank', 'noopener,noreferrer');
+        }
+    });
 }
 
 // Function to initialize all components
@@ -249,8 +247,8 @@ function initializeComponents() {
     componentLoader.loadComponent('#testimonial-cta-section', '/components/testimonial-cta.html');
     componentLoader.loadComponent('#bottom-cta-section', '/components/cta.html');
     
-    // Ensure quote modal is globally available on all pages
-    ensureQuoteModalAvailability();
+    // Handle Calendly redirects for any remaining modal triggers
+    handleCalendlyRedirects();
     
     // Load service cards with rewritten, India-focused content
     componentLoader.loadServiceCard('#service-card-1', 'bi-globe', 'Web Development for India', 'We build high-performance websites that dominate search rankings in Delhi, Mumbai, and Kolkata, turning visitors into customers.');

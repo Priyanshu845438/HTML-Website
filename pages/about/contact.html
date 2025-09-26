@@ -54,41 +54,15 @@
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <!-- Left Column - Contact Form (Optimized & Conflict Resolved) -->
+                <!-- Left Column - Calendly Booking Widget -->
                 <div class="col-lg-7">
                     <div class="card border-0 shadow-lg">
-                        <div class="card-body p-5">
-                            <h3 class="fw-bold mb-4">Start Your Free Consultation</h3>
-                            <form id="contactForm" method="POST">
-                                <div class="row g-3">
-                                    <div class="col-md-6"><div class="form-floating"><input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required><label for="firstName">Your First Name*</label></div></div>
-                                    <div class="col-md-6"><div class="form-floating"><input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required><label for="lastName">Your Last Name*</label></div></div>
-                                    <div class="col-md-6"><div class="form-floating"><input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required><label for="email">Your Business Email*</label></div></div>
-                                    <div class="col-md-6"><div class="form-floating"><input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number"><label for="phone">Your Phone Number</label></div></div>
-                                </div>
-                                <div class="mt-3">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="serviceInterest" name="serviceInterest" required>
-                                            <option selected disabled value="">What are you interested in?*</option>
-                                            <option value="New Website Development">Build a New Website</option>
-                                            <option value="Digital Marketing & SEO">Grow My Online Presence (SEO & Marketing)</option>
-                                            <option value="Mobile App Development">Develop a Mobile App</option>
-                                            <option value="E-commerce Solution">Launch an E-commerce Store</option>
-                                            <option value="Custom Software">Build Custom Software (ERP/CRM)</option>
-                                            <option value="Unsure/Consultation">I'm Not Sure, I Need a Consultation</option>
-                                        </select>
-                                        <label for="serviceInterest">I'm Interested In...*</label>
-                                    </div>
-                                </div>
-                                <div class="mt-3 mb-4">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="message" name="message" style="height: 120px" placeholder="Your Message" required></textarea>
-                                        <label for="message">Tell us about your project goals*</label>
-                                    </div>
-                                </div>
-                                <div id="form-message" class="mb-3" style="display: none;"></div>
-                                <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill"><i class="bi bi-rocket-launch-fill me-2"></i>Request My Free Consultation</button>
-                            </form>
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-4 text-center">Schedule Your Free Consultation</h3>
+                            <!-- Calendly inline widget begin -->
+                            <div class="calendly-inline-widget" data-url="https://calendly.com/acadify-online/30min?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+                            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                            <!-- Calendly inline widget end -->
                         </div>
                     </div>
                 </div>
