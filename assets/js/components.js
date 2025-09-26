@@ -125,27 +125,33 @@ class ComponentLoader {
                 if (modalResults && results) {
                     if (results.includes('•')) {
                         const resultsArray = results.split('•').filter(item => item.trim());
-                        modalResults.innerHTML = resultsArray.map(item => {
-                            const trimmedItem = item.trim();
-                            // Extract percentage or number if present
-                            const match = trimmedItem.match(/(\d+%|\d+\+|\d+,?\d*)/);
-                            const metric = match ? match[1] : '';
-                            const description = trimmedItem.replace(metric, '').trim();
-                            
-                            return `
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="bg-light rounded-3 p-4 h-100 text-center border border-primary border-opacity-10">
-                                        <div class="display-6 fw-bold text-primary mb-2">${metric || '✓'}</div>
-                                        <p class="mb-0 small text-muted">${description || trimmedItem}</p>
-                                    </div>
-                                </div>
-                            `;
-                        }).join('');
+                        modalResults.innerHTML = `
+                            <div class="row g-2">
+                                ${resultsArray.map(item => {
+                                    const trimmedItem = item.trim();
+                                    // Extract percentage or number if present
+                                    const match = trimmedItem.match(/([+\-]?\d+[%]?|[+\-]?\d+,?\d*[%]?)/);
+                                    const metric = match ? match[1] : '';
+                                    const description = trimmedItem.replace(metric, '').trim();
+                                    
+                                    return `
+                                        <div class="col-12">
+                                            <div class="bg-light rounded-2 p-2 border border-success border-opacity-10 d-flex align-items-center">
+                                                <div class="fw-bold text-success me-2 flex-shrink-0" style="min-width: 50px;">${metric || '✓'}</div>
+                                                <p class="mb-0 small text-muted">${description || trimmedItem}</p>
+                                            </div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        `;
                     } else {
                         modalResults.innerHTML = `
-                            <div class="col-12">
-                                <div class="bg-light rounded-3 p-4 border border-primary border-opacity-10">
-                                    <p class="mb-0 text-muted">${results}</p>
+                            <div class="row g-2">
+                                <div class="col-12">
+                                    <div class="bg-light rounded-2 p-3 border border-success border-opacity-10">
+                                        <p class="mb-0 small text-muted">${results}</p>
+                                    </div>
                                 </div>
                             </div>
                         `;
@@ -246,6 +252,7 @@ function initializeComponents() {
     componentLoader.loadComponent('#latest-blogs-section', '/components/latest-blogs.html');
     componentLoader.loadComponent('#testimonial-cta-section', '/components/testimonial-cta.html');
     componentLoader.loadComponent('#bottom-cta-section', '/components/cta.html');
+    componentLoader.loadComponent('#quote-modal-container', '/components/case-study-modal.html');
     
     // Handle Calendly redirects for any remaining modal triggers
     handleCalendlyRedirects();

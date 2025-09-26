@@ -1,0 +1,27 @@
+Clients & Case studies:
+
+1. https://inhseengineers.com/: develop website + Custom features development for invoice management + CRM + SEO + Social Media Marketing - Wordpress + php + sql
+2. http://navkarinvestment.in/: develop website + CRM + Social Media Marketing - Wordpress + php + custom tool integration + sql
+3. http://samarthfoundation.in/: develop website + Custom features development + Donation tracker tool + SEO + Social Media Marketing - Wordpress + node + custom tool integration + sql
+4. http://taranayurved.com/: Website Development - wordpress
+5. http://tribaltourindia.com/: develop website + Management Tool + SEO + Social Media - Wordpress + php + custom tool integration + node + sql
+6. http://chowpayahousefoundation.com/: Custom Advance Website development + SEO + Social Media + Donation Management Tool - Wordpress + php + custom tool integration + js + sql
+7. http://fssbettiah.org/: develop website + Custom features development + SEO - Wordpress + php + custom tool integration + js + sql
+8. manavtour.co.in: Custom Advance Website development + SEO + Social Media + Vehicle Management Tool - html, css, js, integration, sql
+9. balajitravelindia.com: Custom Advance Website development + SEO + Social Media + Vehicle Management Tool - Wordpress + php + custom tool integration + node + sql
+10. crystalzaluminium.in: Website development + SEO + Social Media + Manufacture management Platform - Wordpress + php + custom tool integration + node + sql
+11. balajipgsurat.com: Website development - Wordpress + php + custom tool integration + node + sql
+12. labdhigroups.com: Website development - Wordpress + php + custom tool integration + node + sql
+13. mankarrealestate.com: Website development + SEO + Social Media + CRM - Wordpress + php + custom tool integration + node + sql
+14. amarjyotisociety.org: Website development - wordpress + php
+15. https://bablucybercafe.in/: Website development SEO + Social Media + CRM + Custom development - Wordpress + php + custom tool integration + node + sql
+16. https://operatorekta.org/: Website development SEO + Social Media + CRM + Custom development - Wordpress + php + custom tool integration + node + sql
+17. https://ssevs.org/: Website development SEO + Social Media + CRM + Custom development - Wordpress + php + custom tool integration + node + sql
+18. https://www.neuroguru.in/: Website development SEO + Social Media + Paid Ads + Custom development - Wordpress + php + custom tool integration + node + sql
+19. https://www.silverlinefoundation.org/: Website development SEO + Social Media + Custom development - Wordpress + php + custom tool integration + node + sql
+20. https://www.thegoodhopefoundation.org/: Website development SEO + Custom development - Wordpress + php + custom tool integration + node + sql
+21. https://www.ireava.com/: Technical Support
+22. https://blueribbonsolution.com/: Digital Maketing
+23. https://saatbaar.com/: Website Development + web portal + android & iOS development - node, express, react, js, mongodb, aws
+24. https://nitinestate.com/: develop website + SEO - html, css, js, custom integration, php
+25. https://saptapadisarees.myshopify.com: ecommerce website - shopify, custom development(js), integration

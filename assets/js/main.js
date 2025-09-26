@@ -202,27 +202,33 @@ document.addEventListener('DOMContentLoaded', function() {
             if (modalResults && results) {
                 if (results.includes('•')) {
                     const resultsArray = results.split('•').filter(item => item.trim());
-                    modalResults.innerHTML = resultsArray.map(item => {
-                        const trimmedItem = item.trim();
-                        // Extract percentage or number if present
-                        const match = trimmedItem.match(/(\d+%|\d+\+|\d+,?\d*)/);
-                        const metric = match ? match[1] : '';
-                        const description = trimmedItem.replace(metric, '').trim();
-                        
-                        return `
-                            <div class="col-md-6 col-lg-4">
-                                <div class="bg-light rounded-3 p-4 h-100 text-center border border-primary border-opacity-10">
-                                    <div class="display-6 fw-bold text-primary mb-2">${metric || '✓'}</div>
-                                    <p class="mb-0 small text-muted">${description || trimmedItem}</p>
-                                </div>
-                            </div>
-                        `;
-                    }).join('');
+                    modalResults.innerHTML = `
+                        <div class="row g-2">
+                            ${resultsArray.map(item => {
+                                const trimmedItem = item.trim();
+                                // Extract percentage or number if present
+                                const match = trimmedItem.match(/([+\-]?\d+[%]?|[+\-]?\d+,?\d*[%]?)/);
+                                const metric = match ? match[1] : '';
+                                const description = trimmedItem.replace(metric, '').trim();
+                                
+                                return `
+                                    <div class="col-12">
+                                        <div class="bg-light rounded-2 p-2 border border-success border-opacity-10 d-flex align-items-center">
+                                            <div class="fw-bold text-success me-2 flex-shrink-0" style="min-width: 50px;">${metric || '✓'}</div>
+                                            <p class="mb-0 small text-muted">${description || trimmedItem}</p>
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    `;
                 } else {
                     modalResults.innerHTML = `
-                        <div class="col-12">
-                            <div class="bg-light rounded-3 p-4 border border-primary border-opacity-10">
-                                <p class="mb-0 text-muted">${results}</p>
+                        <div class="row g-2">
+                            <div class="col-12">
+                                <div class="bg-light rounded-2 p-3 border border-success border-opacity-10">
+                                    <p class="mb-0 small text-muted">${results}</p>
+                                </div>
                             </div>
                         </div>
                     `;
@@ -250,4 +256,93 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // Load case studies for home page after components are loaded
+    setTimeout(function() {
+        loadHomeCaseStudies();
+        loadFullCaseStudies(); // Also try to load full page if we're on that page
+    }, 1500); // Wait for components to load
 });
+
+// Function to load only first 6 case studies for home page
+function loadHomeCaseStudies() {
+    const homeGrid = document.getElementById('home-case-studies-grid');
+    if (homeGrid && typeof allCaseStudies !== 'undefined' && typeof generateCaseStudyCard !== 'undefined') {
+        // Take only first 6 case studies for home page
+        const featuredCaseStudies = allCaseStudies.slice(0, 6);
+        homeGrid.innerHTML = featuredCaseStudies.map(generateCaseStudyCard).join('');
+        
+        // Initialize modal functionality after loading cards
+        setTimeout(function() {
+            if (typeof componentLoader !== 'undefined' && componentLoader.initializeCaseStudyModal) {
+                componentLoader.initializeCaseStudyModal();
+            }
+        }, 100);
+    }
+}
+
+// Function to load all 25 case studies for full case studies page
+function loadFullCaseStudies() {
+    if (typeof allCaseStudies === 'undefined' || typeof generateCaseStudyCard === 'undefined') {
+        // If data not loaded yet, retry after delay
+        setTimeout(loadFullCaseStudies, 500);
+        return;
+    }
+
+    // Load all case studies
+    const allGrid = document.getElementById('all-case-studies-grid');
+    if (allGrid) {
+        allGrid.innerHTML = allCaseStudies.map(generateCaseStudyCard).join('');
+    }
+    
+    // Load filtered grids
+    const webDevGrid = document.getElementById('web-dev-grid');
+    if (webDevGrid) {
+        const webDevStudies = allCaseStudies.filter(study => study.type === 'web-development');
+        webDevGrid.innerHTML = webDevStudies.map(generateCaseStudyCard).join('');
+    }
+    
+    const mobileAppGrid = document.getElementById('mobile-app-grid');
+    if (mobileAppGrid) {
+        const mobileAppStudies = allCaseStudies.filter(study => study.type === 'mobile-app');
+        mobileAppGrid.innerHTML = mobileAppStudies.map(generateCaseStudyCard).join('');
+    }
+    
+    const ngoGrid = document.getElementById('ngo-grid');
+    if (ngoGrid) {
+        const ngoStudies = allCaseStudies.filter(study => study.type === 'ngo');
+        ngoGrid.innerHTML = ngoStudies.map(generateCaseStudyCard).join('');
+    }
+    
+    const ecommerceGrid = document.getElementById('ecommerce-grid');
+    if (ecommerceGrid) {
+        const ecommerceStudies = allCaseStudies.filter(study => study.type === 'ecommerce');
+        ecommerceGrid.innerHTML = ecommerceStudies.map(generateCaseStudyCard).join('');
+    }
+
+    // Initialize modal functionality after loading cards
+    setTimeout(function() {
+        if (typeof componentLoader !== 'undefined' && componentLoader.initializeCaseStudyModal) {
+            componentLoader.initializeCaseStudyModal();
+        }
+        initializeFiltering();
+    }, 200);
+}
+
+// Function to initialize filtering for full page
+function initializeFiltering() {
+    // Bootstrap tabs are automatically handled, but we can add custom logic here if needed
+    const tabButtons = document.querySelectorAll('#case-study-filter button[data-bs-toggle="pill"]');
+    if (tabButtons.length > 0) {
+        tabButtons.forEach(button => {
+            button.addEventListener('shown.bs.tab', function(event) {
+                // Re-initialize modal functionality when switching tabs
+                setTimeout(function() {
+                    if (typeof componentLoader !== 'undefined' && componentLoader.initializeCaseStudyModal) {
+                        componentLoader.initializeCaseStudyModal();
+                    }
+                }, 100);
+            });
+        });
+    }
+}
