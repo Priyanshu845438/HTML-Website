@@ -1,0 +1,321 @@
+/* Ultra Premium Services Component Design */
+/* Following brand theme: #0d3169 primary, Poppins headings, Roboto body */
+
+.premium-services-section {
+    position: relative;
+    padding: 120px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
+    overflow: hidden;
+}
+
+/* Ultra modern background pattern */
+.premium-services-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(13, 49, 105, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(13, 49, 105, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.premium-services-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Premium header styling */
+.premium-header {
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.premium-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    background: linear-gradient(135deg, #0d3169 0%, #1a4480 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.premium-header .lead {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #6c757d;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Ultra premium tab navigation */
+.premium-nav-pills {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 60px;
+    box-shadow: 0 20px 60px rgba(13, 49, 105, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.premium-nav-pills .nav-link {
+    color: #6c757d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 16px;
+    padding: 16px 24px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-nav-pills .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #0d3169 0%, #1a4480 100%);
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 16px;
+}
+
+.premium-nav-pills .nav-link:hover {
+    color: #0d3169;
+    transform: translateY(-2px);
+}
+
+.premium-nav-pills .nav-link.active {
+    color: white;
+    box-shadow: 0 12px 40px rgba(13, 49, 105, 0.3);
+    transform: translateY(-2px);
+}
+
+.premium-nav-pills .nav-link.active::before {
+    opacity: 1;
+}
+
+.premium-nav-pills .nav-link i {
+    position: relative;
+    z-index: 2;
+}
+
+.premium-nav-pills .nav-link span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Premium tab content */
+.premium-tab-content {
+    padding: 60px 0;
+}
+
+.premium-tab-pane {
+    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Premium content cards */
+.premium-content-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow: 0 20px 60px rgba(13, 49, 105, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-content-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px rgba(13, 49, 105, 0.12);
+}
+
+.premium-content-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #0d3169;
+    margin-bottom: 20px;
+}
+
+.premium-content-card .lead {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+/* Premium feature list */
+.premium-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.premium-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.premium-feature-list li i {
+    color: #28a745;
+    font-size: 1.2rem;
+    margin-right: 12px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Premium technology badges */
+.premium-tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.premium-tech-badge {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #0d3169;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(13, 49, 105, 0.1);
+    transition: all 0.3s ease;
+}
+
+.premium-tech-badge:hover {
+    background: linear-gradient(135deg, #0d3169 0%, #1a4480 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(13, 49, 105, 0.2);
+}
+
+/* Premium icon styling for tab content */
+.premium-service-icon {
+    font-size: 4rem;
+    color: #0d3169;
+    margin-bottom: 24px;
+    opacity: 0.1;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transition: all 0.4s ease;
+}
+
+.premium-content-card:hover .premium-service-icon {
+    opacity: 0.05;
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .premium-services-section {
+        padding: 80px 0;
+    }
+    
+    .premium-header {
+        margin-bottom: 60px;
+    }
+    
+    .premium-content-card {
+        padding: 32px;
+        margin-bottom: 32px;
+    }
+    
+    .premium-nav-pills .nav-link {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .premium-services-section {
+        padding: 60px 0;
+    }
+    
+    .premium-content-card {
+        padding: 24px;
+    }
+    
+    .premium-nav-pills {
+        flex-direction: column;
+    }
+    
+    .premium-nav-pills .nav-link {
+        margin-bottom: 4px;
+    }
+}
+
+/* Ultra premium visual enhancements */
+.premium-visual-element {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #0d3169 0%, #1a4480 100%);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    box-shadow: 0 20px 40px rgba(13, 49, 105, 0.2);
+    transition: all 0.4s ease;
+}
+
+.premium-visual-element:hover {
+    transform: translateY(-4px) rotate(2deg);
+    box-shadow: 0 30px 60px rgba(13, 49, 105, 0.3);
+}
+
+.premium-visual-element i {
+    font-size: 3rem;
+    color: white;
+}
+
+/* Premium two-column layout */
+.premium-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+@media (max-width: 991.98px) {
+    .premium-two-column {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

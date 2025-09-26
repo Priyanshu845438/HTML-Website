@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/assets/css/components/footer.css">
     <link rel="stylesheet" href="/assets/css/components/testimonial-cta.css">
     <link rel="stylesheet" href="/assets/css/components/hero.css">
+    <link rel="stylesheet" href="/assets/css/components/premium-services.css">
 
     <!-- SCHEMA MARKUP - START -->
 <script type="application/ld+json">
@@ -140,13 +141,13 @@
     </section>
 
     <!-- Premium UX Value Section -->
-    <section class="py-5" style="background: linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%);">
+    <section class="py-5 bg-white">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="text-center text-white mb-5">
-                        <h2 class="display-5 fw-bold mb-3">Why Poor UX is a Catastrophic Business Failure in India</h2>
-                        <p class="lead opacity-90">88% of users won't return after a bad experience. Design or die.</p>
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold mb-3 text-dark">Why Poor UX is a Catastrophic Business Failure in India</h2>
+                        <p class="lead text-muted">88% of users won't return after a bad experience. Design or die.</p>
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-6">
@@ -223,71 +224,153 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <a href="/contact" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold shadow">Fix Your UX Now <i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="/contact" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-semibold shadow">Fix Your UX Now <i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our UI/UX Design Services (Interactive Tabs) -->
-    <section class="py-5" style="background-color: #F8F9FA;">
+    <!-- Our Design Doctrine in Action - Ultra Premium Design -->
+    <section class="premium-services-section">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-6 fw-bold mb-3">Our Design Doctrine in Action</h2>
-                <p class="lead text-muted">A holistic, three-phase process that transforms business objectives into unforgettable user experiences.</p>
+            <div class="premium-header">
+                <h2>Our Design Doctrine in Action</h2>
+                <p class="lead">A holistic, three-phase process that transforms business objectives into unforgettable user experiences.</p>
             </div>
             
-            <ul class="nav nav-pills nav-fill mb-4" id="uiuxTabs" role="tablist">
-                <li class="nav-item" role="presentation"><button class="nav-link active fw-semibold" id="ux-research-tab" data-bs-toggle="pill" data-bs-target="#ux-research" type="button" role="tab" aria-controls="ux-research" aria-selected="true"><i class="bi bi-search me-2"></i>UX Research & Strategy</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="ui-design-tab" data-bs-toggle="pill" data-bs-target="#ui-design" type="button" role="tab" aria-controls="ui-design" aria-selected="false"><i class="bi bi-brush me-2"></i>UI Design & Prototyping</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="design-systems-tab" data-bs-toggle="pill" data-bs-target="#design-systems" type="button" role="tab" aria-controls="design-systems" aria-selected="false"><i class="bi bi-grid-3x3-gap me-2"></i>Design Systems & Handoff</button></li>
+            <!-- Premium Tab Navigation -->
+            <ul class="nav nav-pills nav-fill premium-nav-pills" id="uiuxTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="ux-research-tab" data-bs-toggle="pill" data-bs-target="#ux-research" type="button" role="tab" aria-controls="ux-research" aria-selected="true">
+                        <i class="bi bi-search me-2"></i><span>UX Research & Strategy</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="ui-design-tab" data-bs-toggle="pill" data-bs-target="#ui-design" type="button" role="tab" aria-controls="ui-design" aria-selected="false">
+                        <i class="bi bi-brush me-2"></i><span>UI Design & Prototyping</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="design-systems-tab" data-bs-toggle="pill" data-bs-target="#design-systems" type="button" role="tab" aria-controls="design-systems" aria-selected="false">
+                        <i class="bi bi-grid-3x3-gap me-2"></i><span>Design Systems & Handoff</span>
+                    </button>
+                </li>
             </ul>
 
-            <div class="tab-content" id="uiuxTabsContent">
-                <div class="tab-pane fade show active" id="ux-research" role="tabpanel" aria-labelledby="ux-research-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Unearthing the Truth of the Indian User</h4>
-                            <p class="mb-3">We demolish assumptions with data. Our rigorous research methodology uncovers the deep-seated motivations and behaviors of your target audience across India's diverse landscape.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>In-Depth User Interviews & Persona Crafting</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Customer Journey Mapping & Friction Analysis</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Competitor UX Teardowns in the Indian Market</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Data-Driven Information Architecture & Navigation Design</li>
+            <!-- Premium Tab Content -->
+            <div class="tab-content premium-tab-content" id="uiuxTabsContent">
+                <!-- UX Research Tab -->
+                <div class="tab-pane fade show active premium-tab-pane" id="ux-research" role="tabpanel" aria-labelledby="ux-research-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h4>Unearthing the Truth of the Indian User</h4>
+                            <p class="lead">
+                                We demolish assumptions with data. Our rigorous research methodology uncovers the deep-seated motivations and behaviors of your target audience across India's diverse landscape.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>In-Depth User Interviews & Persona Crafting</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Customer Journey Mapping & Friction Analysis</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Competitor UX Teardowns in the Indian Market</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Data-Driven Information Architecture & Navigation Design</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">User Research</span>
+                                <span class="premium-tech-badge">Personas</span>
+                                <span class="premium-tech-badge">Journey Maps</span>
+                                <span class="premium-tech-badge">Analytics</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-search premium-service-icon"></i>
+                            <h4>Research-Driven Results</h4>
+                            <p class="lead">Understanding your users is the foundation of exceptional design. Our research uncovers hidden insights that drive conversion.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-target"></i>85% improvement in user task completion rates</li>
+                                <li><i class="bi bi-target"></i>Deep insights into Indian user behavior patterns</li>
+                                <li><i class="bi bi-target"></i>Data-backed design decisions reduce risk</li>
+                                <li><i class="bi bi-target"></i>Competitive advantage through user understanding</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="Detailed user personas our team created, representing diverse users from Delhi, Mumbai, and Kolkata." loading="lazy" id="ux-research-image"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="ui-design" role="tabpanel" aria-labelledby="ui-design-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Engineering Interfaces That Enchant and Convert</h4>
-                            <p class="mb-3">We transmute strategy into sublime, high-functioning interfaces that are intuitive to navigate, stunning to behold, and meticulously designed to guide users towards conversion.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Strategic Wireframing & User Flow Architecture</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Pixel-Perfect, High-Fidelity Visual Design</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>High-Fidelity, Interactive Prototyping & Testing</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Purposeful Micro-interactions & Animations</li>
+
+                <!-- UI Design Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="ui-design" role="tabpanel" aria-labelledby="ui-design-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-brush"></i>
+                            </div>
+                            <h4>Engineering Interfaces That Enchant and Convert</h4>
+                            <p class="lead">
+                                We transmute strategy into sublime, high-functioning interfaces that are intuitive to navigate, stunning to behold, and meticulously designed to guide users towards conversion.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Strategic Wireframing & User Flow Architecture</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Pixel-Perfect, High-Fidelity Visual Design</li>
+                                <li><i class="bi bi-check-circle-fill"></i>High-Fidelity, Interactive Prototyping & Testing</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Purposeful Micro-interactions & Animations</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Figma</span>
+                                <span class="premium-tech-badge">Sketch</span>
+                                <span class="premium-tech-badge">Adobe XD</span>
+                                <span class="premium-tech-badge">Principle</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-brush premium-service-icon"></i>
+                            <h4>Design Excellence</h4>
+                            <p class="lead">Beautiful interfaces that convert visitors to customers. Our designs combine aesthetic appeal with psychological principles.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-palette2"></i>Consistent brand identity across all touchpoints</li>
+                                <li><i class="bi bi-palette2"></i>Mobile-first responsive design approach</li>
+                                <li><i class="bi bi-palette2"></i>Accessibility & inclusive design principles</li>
+                                <li><i class="bi bi-palette2"></i>Conversion-optimized user flows</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="A high-fidelity mockup of a clean, modern mobile app interface designed by our agency for an Indian client." loading="lazy" id="ui-design-image"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="design-systems" role="tabpanel" aria-labelledby="design-systems-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Architecting for Unwavering Consistency & Velocity</h4>
-                            <p class="mb-3">We create powerful, scalable design systems that serve as the single source of truth, guaranteeing brand consistency across your digital empire and supercharging future development cycles.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Atomic Design & Reusable Component Libraries</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Exhaustive Style Guides & UI Kits</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Precise Developer Documentation & Handoff</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Ensuring Future-Proof Scalability</li>
+
+                <!-- Design Systems Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="design-systems" role="tabpanel" aria-labelledby="design-systems-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-grid-3x3-gap"></i>
+                            </div>
+                            <h4>Architecting for Unwavering Consistency & Velocity</h4>
+                            <p class="lead">
+                                We create powerful, scalable design systems that serve as the single source of truth, guaranteeing brand consistency across your digital empire and supercharging future development cycles.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Atomic Design & Reusable Component Libraries</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Exhaustive Style Guides & UI Kits</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Precise Developer Documentation & Handoff</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Ensuring Future-Proof Scalability</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Storybook</span>
+                                <span class="premium-tech-badge">Design Tokens</span>
+                                <span class="premium-tech-badge">Component Library</span>
+                                <span class="premium-tech-badge">Style Guide</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-grid-3x3-gap premium-service-icon"></i>
+                            <h4>Scalable Design Architecture</h4>
+                            <p class="lead">Design systems reduce development time by 60% while ensuring consistent, professional experiences across all platforms.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-layers"></i>Consistent brand experience across all platforms</li>
+                                <li><i class="bi bi-layers"></i>Accelerated development & design workflows</li>
+                                <li><i class="bi bi-layers"></i>Reduced design debt & technical debt</li>
+                                <li><i class="bi bi-layers"></i>Future-ready scalable foundation</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="An organized library of UI components (buttons, forms, cards) from a scalable design system we built." loading="lazy" id="design-systems-image"></div>
                     </div>
                 </div>
             </div>

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/assets/css/components/footer.css">
     <link rel="stylesheet" href="/assets/css/components/testimonial-cta.css">
     <link rel="stylesheet" href="/assets/css/components/hero.css">
+    <link rel="stylesheet" href="/assets/css/components/premium-services.css">
 
     <!-- SCHEMA MARKUP - START -->
 <script type="application/ld+json">
@@ -140,13 +141,13 @@
     </section>
 
     <!-- Premium Web Value Section -->
-    <section class="py-5" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+    <section class="py-5 bg-white">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="text-center text-white mb-5">
-                        <h2 class="display-5 fw-bold mb-3">Your Website is Your Digital Flagship Store</h2>
-                        <p class="lead opacity-90">First impressions decide 94% of purchase decisions. Make yours count.</p>
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold mb-3 text-dark">Your Website is Your Digital Flagship Store</h2>
+                        <p class="lead text-muted">First impressions decide 94% of purchase decisions. Make yours count.</p>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-6">
@@ -215,71 +216,153 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <a href="/contact" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold shadow">Get Your Web Strategy <i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="/contact" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-semibold shadow">Get Your Web Strategy <i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Web Development Services (Interactive Tabs) -->
-    <section class="py-5" style="background-color: #F8F9FA;">
+    <!-- Our Web Engineering Solutions - Ultra Premium Design -->
+    <section class="premium-services-section">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-6 fw-bold mb-3">Our Web Engineering Solutions</h2>
-                <p class="lead text-muted">Precision-engineered solutions for the unique demands of the Indian digital marketplace.</p>
+            <div class="premium-header">
+                <h2>Our Web Engineering Solutions</h2>
+                <p class="lead">Precision-engineered solutions for the unique demands of the Indian digital marketplace.</p>
             </div>
             
-            <ul class="nav nav-pills nav-fill mb-4" id="webDevTabs" role="tablist">
-                <li class="nav-item" role="presentation"><button class="nav-link active fw-semibold" id="ecommerce-tab" data-bs-toggle="pill" data-bs-target="#ecommerce" type="button" role="tab" aria-controls="ecommerce" aria-selected="true"><i class="bi bi-cart3 me-2"></i>High-Revenue E-commerce Platforms</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="corporate-tab" data-bs-toggle="pill" data-bs-target="#corporate" type="button" role="tab" aria-controls="corporate" aria-selected="false"><i class="bi bi-building me-2"></i>Corporate & Enterprise Websites</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="webapp-tab" data-bs-toggle="pill" data-bs-target="#webapp" type="button" role="tab" aria-controls="webapp" aria-selected="false"><i class="bi bi-code-square me-2"></i>Custom Web Applications</button></li>
+            <!-- Premium Tab Navigation -->
+            <ul class="nav nav-pills nav-fill premium-nav-pills" id="webDevTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="ecommerce-tab" data-bs-toggle="pill" data-bs-target="#ecommerce" type="button" role="tab" aria-controls="ecommerce" aria-selected="true">
+                        <i class="bi bi-cart3 me-2"></i><span>High-Revenue E-commerce</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="corporate-tab" data-bs-toggle="pill" data-bs-target="#corporate" type="button" role="tab" aria-controls="corporate" aria-selected="false">
+                        <i class="bi bi-building me-2"></i><span>Corporate & Enterprise</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="webapp-tab" data-bs-toggle="pill" data-bs-target="#webapp" type="button" role="tab" aria-controls="webapp" aria-selected="false">
+                        <i class="bi bi-code-square me-2"></i><span>Custom Web Applications</span>
+                    </button>
+                </li>
             </ul>
 
-            <div class="tab-content" id="webDevTabsContent">
-                <div class="tab-pane fade show active" id="ecommerce" role="tabpanel" aria-labelledby="ecommerce-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Conquer Indian E-commerce</h4>
-                            <p class="mb-3">We build formidable, high-conversion online stores that deliver a flawless shopping experience, from first click to secure, multi-option checkout.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Shopify, WooCommerce & Magento Expertise</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Seamless Indian Payment Gateway Integration (Razorpay, PayU)</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Logistics & Pan-India Shipping API Integration</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Mobile-First, Conversion-Rate-Optimized (CRO) Design</li>
+            <!-- Premium Tab Content -->
+            <div class="tab-content premium-tab-content" id="webDevTabsContent">
+                <!-- E-commerce Tab -->
+                <div class="tab-pane fade show active premium-tab-pane" id="ecommerce" role="tabpanel" aria-labelledby="ecommerce-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-cart3"></i>
+                            </div>
+                            <h4>Conquer Indian E-commerce</h4>
+                            <p class="lead">
+                                We build formidable, high-conversion online stores that deliver a flawless shopping experience, from first click to secure, multi-option checkout.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Shopify, WooCommerce & Magento Expertise</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Seamless Indian Payment Gateway Integration (Razorpay, PayU)</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Logistics & Pan-India Shipping API Integration</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Mobile-First, Conversion-Rate-Optimized Design</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Shopify Plus</span>
+                                <span class="premium-tech-badge">WooCommerce</span>
+                                <span class="premium-tech-badge">Magento</span>
+                                <span class="premium-tech-badge">Razorpay</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-cart3 premium-service-icon"></i>
+                            <h4>E-commerce Excellence</h4>
+                            <p class="lead">Indian e-commerce is booming with 350+ million online shoppers. Our platforms capture this massive opportunity.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-graph-up"></i>Average 40% increase in conversion rates</li>
+                                <li><i class="bi bi-graph-up"></i>Multi-language & multi-currency support</li>
+                                <li><i class="bi bi-graph-up"></i>Advanced inventory management systems</li>
+                                <li><i class="bi bi-graph-up"></i>AI-powered recommendation engines</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="An e-commerce website checkout page designed for Indian customers, featuring UPI and other local payment options." loading="lazy" id="ecommerce-image"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="corporate" role="tabpanel" aria-labelledby="corporate-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Forge Digital Credibility & Authority</h4>
-                            <p class="mb-3">We architect a formidable online presence with a professional, enterprise-grade website that builds unshakeable authority and serves as your central lead-generation hub.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>WordPress, Headless CMS & Custom Development</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>SEO-First Architecture for Google Dominance</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Lead-Capture Forms & CRM Integration</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Sub-Second Page Load Speeds (Core Web Vitals)</li>
+
+                <!-- Corporate Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="corporate" role="tabpanel" aria-labelledby="corporate-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h4>Forge Digital Credibility & Authority</h4>
+                            <p class="lead">
+                                We architect a formidable online presence with professional, enterprise-grade websites that build unshakeable authority and serve as your central lead-generation hub.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>WordPress, Headless CMS & Custom Development</li>
+                                <li><i class="bi bi-check-circle-fill"></i>SEO-First Architecture for Google Dominance</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Lead-Capture Forms & CRM Integration</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Sub-Second Page Load Speeds</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">WordPress</span>
+                                <span class="premium-tech-badge">Headless CMS</span>
+                                <span class="premium-tech-badge">React</span>
+                                <span class="premium-tech-badge">Next.js</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-building premium-service-icon"></i>
+                            <h4>Corporate Website ROI</h4>
+                            <p class="lead">Professional websites generate 5x more leads and establish instant credibility in competitive Indian markets.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-award"></i>Premium brand positioning & trust building</li>
+                                <li><i class="bi bi-award"></i>Advanced SEO & local search optimization</li>
+                                <li><i class="bi bi-award"></i>Lead generation & marketing automation</li>
+                                <li><i class="bi bi-award"></i>Enterprise security & performance</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="A clean, authoritative corporate website layout designed for an enterprise business in Mumbai, India." loading="lazy" id="corporate-image"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="webapp" role="tabpanel" aria-labelledby="webapp-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Automate Processes. Innovate Services.</h4>
-                            <p class="mb-3">Transcend the limits of a standard website. We build powerful custom web applications that automate complex business processes and create new digital revenue streams.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Bespoke Customer Portals & Analytics Dashboards</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Scalable SaaS & Platform-as-a-Service Products</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Complex Third-Party API Integrations</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Robust, Cloud-Native Architecture (AWS, GCP)</li>
+
+                <!-- Web Applications Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="webapp" role="tabpanel" aria-labelledby="webapp-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <h4>Automate Processes. Innovate Services.</h4>
+                            <p class="lead">
+                                Transcend the limits of a standard website. We build powerful custom web applications that automate complex business processes and create new digital revenue streams.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Bespoke Customer Portals & Analytics Dashboards</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Scalable SaaS & Platform-as-a-Service Products</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Complex Third-Party API Integrations</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Robust, Cloud-Native Architecture</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">React</span>
+                                <span class="premium-tech-badge">Node.js</span>
+                                <span class="premium-tech-badge">Python</span>
+                                <span class="premium-tech-badge">AWS</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-code-square premium-service-icon"></i>
+                            <h4>Digital Transformation</h4>
+                            <p class="lead">Custom web applications reduce operational costs by 60% while creating new revenue opportunities for forward-thinking businesses.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-gear"></i>Process automation & workflow optimization</li>
+                                <li><i class="bi bi-gear"></i>Real-time analytics & business intelligence</li>
+                                <li><i class="bi bi-gear"></i>Scalable cloud infrastructure</li>
+                                <li><i class="bi bi-gear"></i>Enterprise-grade security & compliance</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="A custom web application dashboard showing real-time business analytics for an Indian logistics company." loading="lazy" id="webapp-image"></div>
                     </div>
                 </div>
             </div>

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/assets/css/components/footer.css">
     <link rel="stylesheet" href="/assets/css/components/testimonial-cta.css">
     <link rel="stylesheet" href="/assets/css/components/hero.css">
+    <link rel="stylesheet" href="/assets/css/components/premium-services.css">
 
     <!-- SCHEMA MARKUP - START -->
 <script type="application/ld+json">
@@ -273,118 +274,145 @@
         </div>
     </section>
 
-    <!-- Our App Development Services Component (Bootstrap Tabs) -->
-    <section class="py-5" style="background-color: #F8F9FA;">
+    <!-- Our Elite App Development Services - Ultra Premium Design -->
+    <section class="premium-services-section">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-6 fw-bold mb-4">Our Elite App Development Services</h2>
-                <p class="lead text-muted">Mastery in Native iOS, Android, and Cross-Platform solutions for ambitious businesses in Delhi, Mumbai, and Kolkata.</p>
+            <div class="premium-header">
+                <h2>Our Elite App Development Services</h2>
+                <p class="lead">Mastery in Native iOS, Android, and Cross-Platform solutions for ambitious businesses in Delhi, Mumbai, and Kolkata.</p>
             </div>
             
-            <!-- Bootstrap Tab Navigation -->
-            <ul class="nav nav-pills nav-fill mb-5" id="appServicesTabs" role="tablist">
+            <!-- Premium Tab Navigation -->
+            <ul class="nav nav-pills nav-fill premium-nav-pills" id="appServicesTabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active fw-medium" id="ios-tab" data-bs-toggle="pill" data-bs-target="#ios" type="button" role="tab" aria-controls="ios" aria-selected="true">
-                        <i class="bi bi-apple me-2"></i>Native iOS Development
+                    <button class="nav-link active" id="ios-tab" data-bs-toggle="pill" data-bs-target="#ios" type="button" role="tab" aria-controls="ios" aria-selected="true">
+                        <i class="bi bi-apple me-2"></i><span>Native iOS Development</span>
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link fw-medium" id="android-tab" data-bs-toggle="pill" data-bs-target="#android" type="button" role="tab" aria-controls="android" aria-selected="false">
-                        <i class="bi bi-android2 me-2"></i>Native Android Development
+                    <button class="nav-link" id="android-tab" data-bs-toggle="pill" data-bs-target="#android" type="button" role="tab" aria-controls="android" aria-selected="false">
+                        <i class="bi bi-android2 me-2"></i><span>Native Android Development</span>
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link fw-medium" id="hybrid-tab" data-bs-toggle="pill" data-bs-target="#hybrid" type="button" role="tab" aria-controls="hybrid" aria-selected="false">
-                        <i class="bi bi-code-slash me-2"></i>Hybrid & Cross-Platform
+                    <button class="nav-link" id="hybrid-tab" data-bs-toggle="pill" data-bs-target="#hybrid" type="button" role="tab" aria-controls="hybrid" aria-selected="false">
+                        <i class="bi bi-code-slash me-2"></i><span>Hybrid & Cross-Platform</span>
                     </button>
                 </li>
             </ul>
 
-            <!-- Tab Content -->
-            <div class="tab-content" id="appServicesTabsContent">
+            <!-- Premium Tab Content -->
+            <div class="tab-content premium-tab-content" id="appServicesTabsContent">
                 <!-- iOS Development Tab -->
-                <div class="tab-pane fade show active" id="ios" role="tabpanel" aria-labelledby="ios-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="text-center mb-4 mb-lg-0">
-                                <i class="bi bi-apple display-1 text-primary mb-3"></i>
-                                <h4 class="fw-bold">Native iOS: The Gold Standard</h4>
+                <div class="tab-pane fade show active premium-tab-pane" id="ios" role="tabpanel" aria-labelledby="ios-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-apple"></i>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <p class="lead mb-4">
+                            <h4>Native iOS: The Gold Standard</h4>
+                            <p class="lead">
                                 Captivate India's most discerning users. We architect elite, high-performance native iOS apps that deliver the flawless, premium experience expected by Apple enthusiasts in Delhi's high-end markets and Mumbai's financial districts.
                             </p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Uncompromising performance and ironclad security</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Seamless integration with iOS hardware (Face ID, ARKit)</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Strategic guidance for a successful App Store launch</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Meticulous adherence to Apple's Human Interface Guidelines</li>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Uncompromising performance and ironclad security</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Seamless integration with iOS hardware (Face ID, ARKit)</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Strategic guidance for a successful App Store launch</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Meticulous adherence to Apple's Human Interface Guidelines</li>
                             </ul>
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-                                <span class="badge bg-light text-dark border">Swift</span>
-                                <span class="badge bg-light text-dark border">Xcode</span>
-                                <span class="badge bg-light text-dark border">SwiftUI</span>
-                                <span class="badge bg-light text-dark border">Core Data</span>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Swift</span>
+                                <span class="premium-tech-badge">Xcode</span>
+                                <span class="premium-tech-badge">SwiftUI</span>
+                                <span class="premium-tech-badge">Core Data</span>
                             </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-apple premium-service-icon"></i>
+                            <h4>Why Choose Native iOS?</h4>
+                            <p class="lead">iOS users in India represent the highest-value customer segment, with 3x higher average revenue per user compared to other platforms.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-star-fill"></i>Premium brand positioning in the Indian market</li>
+                                <li><i class="bi bi-star-fill"></i>Access to exclusive iOS-only features and APIs</li>
+                                <li><i class="bi bi-star-fill"></i>Higher user engagement and retention rates</li>
+                                <li><i class="bi bi-star-fill"></i>Better monetization opportunities</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- Android Development Tab -->
-                <div class="tab-pane fade" id="android" role="tabpanel" aria-labelledby="android-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="text-center mb-4 mb-lg-0">
-                                <i class="bi bi-android2 display-1 text-success mb-3"></i>
-                                <h4 class="fw-bold">Native Android: Maximum Reach</h4>
+                <div class="tab-pane fade premium-tab-pane" id="android" role="tabpanel" aria-labelledby="android-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-android2"></i>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <p class="lead mb-4">
+                            <h4>Native Android: Maximum Reach</h4>
+                            <p class="lead">
                                 Dominate India's largest market segment. We build powerful, scalable native Android apps engineered to perform flawlessly across the vast and diverse ecosystem of devices used from Uttar Pradesh to West Bengal.
                             </p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Access the vast majority of Indian smartphone users</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Infinitely customizable to your unique brand vision</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Optimized for every screen, from budget phones to flagship tablets</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Deep integration with Google's powerful service suite</li>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Access the vast majority of Indian smartphone users</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Infinitely customizable to your unique brand vision</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Optimized for every screen, from budget phones to flagship tablets</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Deep integration with Google's powerful service suite</li>
                             </ul>
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-                                <span class="badge bg-light text-dark border">Kotlin</span>
-                                <span class="badge bg-light text-dark border">Android Studio</span>
-                                <span class="badge bg-light text-dark border">Jetpack Compose</span>
-                                <span class="badge bg-light text-dark border">Room Database</span>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Kotlin</span>
+                                <span class="premium-tech-badge">Android Studio</span>
+                                <span class="premium-tech-badge">Jetpack Compose</span>
+                                <span class="premium-tech-badge">Room Database</span>
                             </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-android2 premium-service-icon"></i>
+                            <h4>Android Market Dominance</h4>
+                            <p class="lead">With 95% market share in India, Android is the gateway to reaching the masses and scaling your business exponentially.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-globe"></i>Massive reach across tier 1, 2, and 3 cities</li>
+                                <li><i class="bi bi-globe"></i>Flexible deployment options and app distribution</li>
+                                <li><i class="bi bi-globe"></i>Rich ecosystem of Google services integration</li>
+                                <li><i class="bi bi-globe"></i>Cost-effective user acquisition strategies</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- Hybrid Development Tab -->
-                <div class="tab-pane fade" id="hybrid" role="tabpanel" aria-labelledby="hybrid-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="text-center mb-4 mb-lg-0">
-                                <i class="bi bi-code-slash display-1 text-warning mb-3"></i>
-                                <h4 class="fw-bold">Cross-Platform: Smart & Swift</h4>
+                <div class="tab-pane fade premium-tab-pane" id="hybrid" role="tabpanel" aria-labelledby="hybrid-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h4>Cross-Platform: Smart & Swift</h4>
+                            <p class="lead">
+                                Launch faster and smarter. Ideal for startups and businesses aiming for rapid market penetration, our cross-platform apps reduce timelines and costs without compromising on quality.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Single, efficient codebase for both iOS and Android</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Dramatically accelerated time-to-market across India</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Significant reduction in initial development investment</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Flawlessly consistent brand experience on every device</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">React Native</span>
+                                <span class="premium-tech-badge">Flutter</span>
+                                <span class="premium-tech-badge">Ionic</span>
+                                <span class="premium-tech-badge">Progressive Web Apps</span>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <p class="lead mb-4">
-                                Launch faster and smarter. Ideal for startups and businesses aiming for rapid market penetration, our cross-platform apps (React Native & Flutter) reduce timelines and costs without compromising on a high-quality, native-like user experience. It's a strategy endorsed by the agile principles of initiatives like <a href="https://www.startupindia.gov.in/" target="_blank" rel="noopener noreferrer nofollow">Startup India</a>. <!-- EXTERNAL LINK -->
-                            </p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Single, efficient codebase for both iOS and Android</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Dramatically accelerated time-to-market across India</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Significant reduction in initial development investment</li>
-                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Flawlessly consistent brand experience on every device</li>
+                        <div class="premium-content-card">
+                            <i class="bi bi-code-slash premium-service-icon"></i>
+                            <h4>Strategic Advantages</h4>
+                            <p class="lead">Perfect for MVP development and rapid scaling endorsed by initiatives like Startup India for agile business growth.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-lightning-charge"></i>70% faster development cycles</li>
+                                <li><i class="bi bi-lightning-charge"></i>50% cost reduction compared to native</li>
+                                <li><i class="bi bi-lightning-charge"></i>Near-native performance with modern frameworks</li>
+                                <li><i class="bi bi-lightning-charge"></i>Easier maintenance and updates across platforms</li>
                             </ul>
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-                                <span class="badge bg-light text-dark border">React Native</span>
-                                <span class="badge bg-light text-dark border">Flutter</span>
-                                <span class="badge bg-light text-dark border">Ionic</span>
-                                <span class="badge bg-light text-dark border">Progressive Web Apps</span>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/assets/css/components/footer.css">
     <link rel="stylesheet" href="/assets/css/components/testimonial-cta.css">
     <link rel="stylesheet" href="/assets/css/components/hero.css">
+    <link rel="stylesheet" href="/assets/css/components/premium-services.css">
 
     <!-- SCHEMA MARKUP - START -->
 <script type="application/ld+json">
@@ -252,71 +253,145 @@
         </div>
     </section>
 
-    <!-- Our Custom Development Services (Interactive Tabs) -->
-    <section class="py-5" style="background-color: #F8F9FA;">
+    <!-- Our Core Software Engineering Services - Ultra Premium Design -->
+    <section class="premium-services-section">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-6 fw-bold mb-3">Our Core Software Engineering Services</h2>
-                <p class="lead text-muted">Forging strategic digital assets for market leaders in Delhi, Mumbai, and Kolkata.</p>
+            <div class="premium-header">
+                <h2>Our Core Software Engineering Services</h2>
+                <p class="lead">Forging strategic digital assets for market leaders in Delhi, Mumbai, and Kolkata.</p>
             </div>
             
-            <ul class="nav nav-pills nav-fill mb-4" id="customDevTabs" role="tablist">
-                <li class="nav-item" role="presentation"><button class="nav-link active fw-semibold" id="enterprise-software-tab" data-bs-toggle="pill" data-bs-target="#enterprise-software" type="button" role="tab" aria-controls="enterprise-software" aria-selected="true"><i class="bi bi-building me-2"></i>Enterprise Software</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="api-development-tab" data-bs-toggle="pill" data-bs-target="#api-development" type="button" role="tab" aria-controls="api-development" aria-selected="false"><i class="bi bi-diagram-3 me-2"></i>API & Integration</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="legacy-modernization-tab" data-bs-toggle="pill" data-bs-target="#legacy-modernization" type="button" role="tab" aria-controls="legacy-modernization" aria-selected="false"><i class="bi bi-arrow-up-circle me-2"></i>Legacy Modernization</button></li>
+            <!-- Premium Tab Navigation -->
+            <ul class="nav nav-pills nav-fill premium-nav-pills" id="customDevTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="enterprise-software-tab" data-bs-toggle="pill" data-bs-target="#enterprise-software" type="button" role="tab" aria-controls="enterprise-software" aria-selected="true">
+                        <i class="bi bi-building me-2"></i><span>Enterprise Software</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="api-development-tab" data-bs-toggle="pill" data-bs-target="#api-development" type="button" role="tab" aria-controls="api-development" aria-selected="false">
+                        <i class="bi bi-diagram-3 me-2"></i><span>API & Integration</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="legacy-modernization-tab" data-bs-toggle="pill" data-bs-target="#legacy-modernization" type="button" role="tab" aria-controls="legacy-modernization" aria-selected="false">
+                        <i class="bi bi-arrow-up-circle me-2"></i><span>Legacy Modernization</span>
+                    </button>
+                </li>
             </ul>
 
-            <div class="tab-content" id="customDevTabsContent">
-                <div class="tab-pane fade show active" id="enterprise-software" role="tabpanel" aria-labelledby="enterprise-software-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Enterprise Software Architecture</h4>
-                            <p class="mb-3">We architect enterprise-grade applications that become the central nervous system of your operation. These robust, secure, and infinitely scalable platforms automate complex workflows, unify critical data, and empower data-driven decisions.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Bespoke ERP & CRM Platforms</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Intelligent Supply Chain & Logistics Systems</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Actionable Business Intelligence (BI) Dashboards</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Advanced Workflow & Process Automation Engines</li>
+            <!-- Premium Tab Content -->
+            <div class="tab-content premium-tab-content" id="customDevTabsContent">
+                <!-- Enterprise Software Tab -->
+                <div class="tab-pane fade show active premium-tab-pane" id="enterprise-software" role="tabpanel" aria-labelledby="enterprise-software-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h4>Enterprise Software Architecture</h4>
+                            <p class="lead">
+                                We architect enterprise-grade applications that become the central nervous system of your operation. These robust, secure, and infinitely scalable platforms automate complex workflows and empower data-driven decisions.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Bespoke ERP & CRM Platforms</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Intelligent Supply Chain & Logistics Systems</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Actionable Business Intelligence (BI) Dashboards</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Advanced Workflow & Process Automation Engines</li>
                             </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Java Spring</span>
+                                <span class="premium-tech-badge">.NET Core</span>
+                                <span class="premium-tech-badge">Python Django</span>
+                                <span class="premium-tech-badge">Microservices</span>
+                            </div>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0">
-                            <img src="placeholder.svg" class="img-fluid rounded" alt="A detailed diagram showing a microservices architecture for a scalable enterprise application built for an Indian logistics company." loading="lazy">
+                        <div class="premium-content-card">
+                            <i class="bi bi-building premium-service-icon"></i>
+                            <h4>Enterprise Value</h4>
+                            <p class="lead">Custom enterprise software delivers 300% ROI by automating processes and providing actionable business insights.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-shield-check"></i>Enterprise-grade security & compliance</li>
+                                <li><i class="bi bi-shield-check"></i>Scalable architecture for growth</li>
+                                <li><i class="bi bi-shield-check"></i>Real-time analytics & reporting</li>
+                                <li><i class="bi bi-shield-check"></i>Complete operational visibility</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="api-development" role="tabpanel" aria-labelledby="api-development-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">API Development & Systems Integration</h4>
-                            <p class="mb-3">Unleash the power of your data. We build powerful, secure APIs and orchestrate complex integrations, creating a unified digital ecosystem where information flows seamlessly between your CRM, ERP, and third-party platforms like payment gateways.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>High-Performance RESTful & GraphQL APIs</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Third-Party Integration (Tally, SAP, Payment Gateways)</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Secure Microservices Communication Layers</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Enterprise-Grade API Security (OAuth 2.0, JWT)</li>
+                <!-- API Development Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="api-development" role="tabpanel" aria-labelledby="api-development-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <h4>API Development & Systems Integration</h4>
+                            <p class="lead">
+                                Unleash the power of your data. We build powerful, secure APIs and orchestrate complex integrations, creating a unified digital ecosystem where information flows seamlessly.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>High-Performance RESTful & GraphQL APIs</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Third-Party Integration (Tally, SAP, Payment Gateways)</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Secure Microservices Communication Layers</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Enterprise-Grade API Security (OAuth 2.0, JWT)</li>
                             </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">REST API</span>
+                                <span class="premium-tech-badge">GraphQL</span>
+                                <span class="premium-tech-badge">OAuth 2.0</span>
+                                <span class="premium-tech-badge">JWT</span>
+                            </div>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0">
-                             <img src="placeholder.svg" class="img-fluid rounded" alt="An illustration of ERP, CRM, and Tally icons connecting to a central API hub, symbolizing our system integration services in India." loading="lazy">
+                        <div class="premium-content-card">
+                            <i class="bi bi-diagram-3 premium-service-icon"></i>
+                            <h4>Integration Excellence</h4>
+                            <p class="lead">Seamless data flow between systems eliminates silos and creates a unified source of truth for your business.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-link-45deg"></i>Real-time data synchronization</li>
+                                <li><i class="bi bi-link-45deg"></i>Automated workflow orchestration</li>
+                                <li><i class="bi bi-link-45deg"></i>Enhanced business intelligence</li>
+                                <li><i class="bi bi-link-45deg"></i>Reduced manual data entry</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="legacy-modernization" role="tabpanel" aria-labelledby="legacy-modernization-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Legacy System Modernization</h4>
-                            <p class="mb-3">Outdated technology is a hidden anchor dragging your business down. We strategically re-engineer your legacy systems, migrating them from monolithic structures to agile, cloud-native architectures that deliver unparalleled performance, security, and scalability.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>In-Depth System & Codebase Audit</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Strategic, Phased Re-engineering & Re-platforming</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Seamless Cloud Migration (AWS, Azure, GCP)</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Critical Performance & Security Fortification</li>
+                <!-- Legacy Modernization Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="legacy-modernization" role="tabpanel" aria-labelledby="legacy-modernization-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-arrow-up-circle"></i>
+                            </div>
+                            <h4>Legacy System Modernization</h4>
+                            <p class="lead">
+                                Outdated technology is a hidden anchor dragging your business down. We strategically re-engineer your legacy systems, migrating them to agile, cloud-native architectures.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>In-Depth System & Codebase Audit</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Strategic, Phased Re-engineering & Re-platforming</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Seamless Cloud Migration (AWS, Azure, GCP)</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Critical Performance & Security Fortification</li>
                             </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Cloud Migration</span>
+                                <span class="premium-tech-badge">Microservices</span>
+                                <span class="premium-tech-badge">Docker</span>
+                                <span class="premium-tech-badge">Kubernetes</span>
+                            </div>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0">
-                            <img src="placeholder.svg" class="img-fluid rounded" alt="A visual metaphor showing an old, clunky server transforming into a modern, distributed cloud infrastructure for a business in Mumbai." loading="lazy">
+                        <div class="premium-content-card">
+                            <i class="bi bi-arrow-up-circle premium-service-icon"></i>
+                            <h4>Modernization Benefits</h4>
+                            <p class="lead">Legacy modernization delivers 5x performance improvement and 70% cost reduction while eliminating technical debt.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-speedometer2"></i>Dramatically improved performance</li>
+                                <li><i class="bi bi-speedometer2"></i>Enhanced security & compliance</li>
+                                <li><i class="bi bi-speedometer2"></i>Reduced maintenance costs</li>
+                                <li><i class="bi bi-speedometer2"></i>Future-ready scalable foundation</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

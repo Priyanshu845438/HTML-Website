@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/assets/css/components/footer.css">
     <link rel="stylesheet" href="/assets/css/components/testimonial-cta.css">
     <link rel="stylesheet" href="/assets/css/components/hero.css">
+    <link rel="stylesheet" href="/assets/css/components/premium-services.css">
 
     <!-- SCHEMA MARKUP - START -->
 <script type="application/ld+json">
@@ -206,64 +207,146 @@
         </div>
     </section>
 
-    <!-- Our SEO Optimization Services (Interactive Tabs) -->
-    <section class="py-5" style="background-color: #F8F9FA;">
+    <!-- Our Three Pillars of SEO Supremacy - Ultra Premium Design -->
+    <section class="premium-services-section">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-6 fw-bold mb-3">Our Three Pillars of SEO Supremacy</h2>
-                <p class="lead text-muted">A holistic, relentless strategy engineered to conquer every critical ranking factor.</p>
+            <div class="premium-header">
+                <h2>Our Three Pillars of SEO Supremacy</h2>
+                <p class="lead">A holistic, relentless strategy engineered to conquer every critical ranking factor.</p>
             </div>
             
-            <ul class="nav nav-pills nav-fill mb-4" id="seoTabs" role="tablist">
-                <li class="nav-item" role="presentation"><button class="nav-link active fw-semibold" id="on-page-seo-tab" data-bs-toggle="pill" data-bs-target="#on-page-seo" type="button" role="tab" aria-controls="on-page-seo" aria-selected="true"><i class="bi bi-file-earmark-text me-2"></i>On-Page & Content Mastery</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="off-page-seo-tab" data-bs-toggle="pill" data-bs-target="#off-page-seo" type="button" role="tab" aria-controls="off-page-seo" aria-selected="false"><i class="bi bi-link-45deg me-2"></i>Off-Page Authority Forging</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="technical-seo-tab" data-bs-toggle="pill" data-bs-target="#technical-seo" type="button" role="tab" aria-controls="technical-seo" aria-selected="false"><i class="bi bi-gear-wide-connected me-2"></i>Unbreakable Technical SEO</button></li>
+            <!-- Premium Tab Navigation -->
+            <ul class="nav nav-pills nav-fill premium-nav-pills" id="seoTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="on-page-seo-tab" data-bs-toggle="pill" data-bs-target="#on-page-seo" type="button" role="tab" aria-controls="on-page-seo" aria-selected="true">
+                        <i class="bi bi-file-earmark-text me-2"></i><span>On-Page & Content</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="off-page-seo-tab" data-bs-toggle="pill" data-bs-target="#off-page-seo" type="button" role="tab" aria-controls="off-page-seo" aria-selected="false">
+                        <i class="bi bi-link-45deg me-2"></i><span>Off-Page Authority</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="technical-seo-tab" data-bs-toggle="pill" data-bs-target="#technical-seo" type="button" role="tab" aria-controls="technical-seo" aria-selected="false">
+                        <i class="bi bi-gear-wide-connected me-2"></i><span>Technical SEO</span>
+                    </button>
+                </li>
             </ul>
 
-            <div class="tab-content" id="seoTabsContent">
-                <div class="tab-pane fade show active" id="on-page-seo" role="tabpanel" aria-labelledby="on-page-seo-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Content That Commands Rankings & Drives Action</h4>
-                            <p class="mb-3">We architect your website's content to perfectly align with the search intent of your most valuable customers in India, signaling indisputable relevance to Google.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>High-Commercial-Intent Keyword Research</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Persuasive Title & Meta Description Engineering (E-E-A-T)</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Authoritative, Long-Form Content Creation</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Logical Internal Linking & Silo Architecture</li>
+            <!-- Premium Tab Content -->
+            <div class="tab-content premium-tab-content" id="seoTabsContent">
+                <!-- On-Page SEO Tab -->
+                <div class="tab-pane fade show active premium-tab-pane" id="on-page-seo" role="tabpanel" aria-labelledby="on-page-seo-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+                            <h4>Content That Commands Rankings & Drives Action</h4>
+                            <p class="lead">
+                                We architect your website's content to perfectly align with the search intent of your most valuable customers in India, signaling indisputable relevance to Google.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>High-Commercial-Intent Keyword Research</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Persuasive Title & Meta Description Engineering (E-E-A-T)</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Authoritative, Long-Form Content Creation</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Logical Internal Linking & Silo Architecture</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Keyword Research</span>
+                                <span class="premium-tech-badge">Content Strategy</span>
+                                <span class="premium-tech-badge">On-Page SEO</span>
+                                <span class="premium-tech-badge">E-E-A-T</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-file-earmark-text premium-service-icon"></i>
+                            <h4>Content Excellence</h4>
+                            <p class="lead">Our content strategies drive 500% more organic traffic and achieve 80% higher search rankings through expert keyword targeting and user intent optimization.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-star"></i>Search intent alignment & relevance scoring</li>
+                                <li><i class="bi bi-star"></i>High-value keyword targeting & optimization</li>
+                                <li><i class="bi bi-star"></i>Content depth & authority building</li>
+                                <li><i class="bi bi-star"></i>User experience & engagement optimization</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="An illustration of a perfectly optimized webpage for an Indian audience, with green checkmarks on headings, content, and images." loading="lazy"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="off-page-seo" role="tabpanel" aria-labelledby="off-page-seo-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Forging an Unshakeable Digital Authority</h4>
-                            <p class="mb-3">Trust is the currency of search. We build your brand's credibility and authority through high-quality backlinks, powerful local signals, and strategic brand mentions across the Indian digital ecosystem.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>High-Authority, Niche-Relevant Link Building</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Hyper-Local SEO for Dominance in Delhi, Mumbai & Kolkata</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Google Business Profile & Map Pack Optimization</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Strategic Digital PR & Brand Mentions</li>
+
+                <!-- Off-Page SEO Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="off-page-seo" role="tabpanel" aria-labelledby="off-page-seo-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-link-45deg"></i>
+                            </div>
+                            <h4>Forging an Unshakeable Digital Authority</h4>
+                            <p class="lead">
+                                Trust is the currency of search. We build your brand's credibility and authority through high-quality backlinks, powerful local signals, and strategic brand mentions across the Indian digital ecosystem.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>High-Authority, Niche-Relevant Link Building</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Hyper-Local SEO for Dominance in Delhi, Mumbai & Kolkata</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Google Business Profile & Map Pack Optimization</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Strategic Digital PR & Brand Mentions</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Link Building</span>
+                                <span class="premium-tech-badge">Local SEO</span>
+                                <span class="premium-tech-badge">Digital PR</span>
+                                <span class="premium-tech-badge">Authority Building</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-link-45deg premium-service-icon"></i>
+                            <h4>Authority & Trust Signals</h4>
+                            <p class="lead">Strategic authority building increases domain authority by 300% and delivers first-page rankings for competitive keywords through quality link acquisition.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-award"></i>High-quality backlink acquisition</li>
+                                <li><i class="bi bi-award"></i>Local business optimization & citations</li>
+                                <li><i class="bi bi-award"></i>Brand mention & reputation management</li>
+                                <li><i class="bi bi-award"></i>Industry authority & thought leadership</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="A diagram showing high-authority Indian news and industry sites linking to our client's website, boosting its SEO authority." loading="lazy"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="technical-seo" role="tabpanel" aria-labelledby="technical-seo-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">The Bedrock of Sustainable Rankings</h4>
-                            <p class="mb-3">A flawless technical foundation is non-negotiable. We ensure your website delivers a lightning-fast, seamless experience for both users and Google's crawlers, satisfying every technical requirement for top rankings.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Core Web Vitals & Page Speed Supremacy</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Advanced, Multi-Layered Schema Markup</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Mobile-First Indexing & Usability Audits</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Crawl Budget Optimization & Log File Analysis</li>
+
+                <!-- Technical SEO Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="technical-seo" role="tabpanel" aria-labelledby="technical-seo-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-gear-wide-connected"></i>
+                            </div>
+                            <h4>The Bedrock of Sustainable Rankings</h4>
+                            <p class="lead">
+                                A flawless technical foundation is non-negotiable. We ensure your website delivers a lightning-fast, seamless experience for both users and Google's crawlers, satisfying every technical requirement for top rankings.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Core Web Vitals & Page Speed Supremacy</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Advanced, Multi-Layered Schema Markup</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Mobile-First Indexing & Usability Audits</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Crawl Budget Optimization & Log File Analysis</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Core Web Vitals</span>
+                                <span class="premium-tech-badge">Schema Markup</span>
+                                <span class="premium-tech-badge">Mobile-First</span>
+                                <span class="premium-tech-badge">Technical Audit</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-gear-wide-connected premium-service-icon"></i>
+                            <h4>Technical Performance</h4>
+                            <p class="lead">Technical SEO optimization improves site performance by 400% and increases crawl efficiency, leading to faster indexing and better search visibility.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-speedometer2"></i>Lightning-fast page load speeds</li>
+                                <li><i class="bi bi-speedometer2"></i>Mobile optimization & responsiveness</li>
+                                <li><i class="bi bi-speedometer2"></i>Search engine crawl optimization</li>
+                                <li><i class="bi bi-speedometer2"></i>Schema & structured data implementation</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="placeholder.svg" class="img-fluid" alt="A visual representation of clean, optimized code, symbolizing the perfect technical SEO foundation for a website in India." loading="lazy"></div>
                     </div>
                 </div>
             </div>

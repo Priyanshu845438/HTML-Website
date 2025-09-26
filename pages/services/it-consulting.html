@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/assets/css/components/footer.css">
     <link rel="stylesheet" href="/assets/css/components/testimonial-cta.css">
     <link rel="stylesheet" href="/assets/css/components/hero.css">
+    <link rel="stylesheet" href="/assets/css/components/premium-services.css">
 
     <!-- SCHEMA MARKUP - START -->
 <script type="application/ld+json">
@@ -139,13 +140,13 @@
     </section>
 
     <!-- Premium IT Consulting Value Section -->
-    <section class="py-5" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+    <section class="py-5 bg-white">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="text-center text-white mb-5">
-                        <h2 class="display-5 fw-bold mb-3">Why Your Current Technology Strategy is a Liability</h2>
-                        <p class="lead opacity-90">Technology should drive growth, not hold it back.</p>
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold mb-3 text-dark">Why Your Current Technology Strategy is a Liability</h2>
+                        <p class="lead text-muted">Technology should drive growth, not hold it back.</p>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-6">
@@ -210,71 +211,153 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <a href="/contact" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold shadow">Get IT Strategy Review <i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="/contact" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-semibold shadow">Get IT Strategy Review <i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our IT Consulting Services (Interactive Tabs) -->
-    <section class="py-5" style="background-color: #F8F9FA;">
+    <!-- Our Executive Consulting Engagements - Ultra Premium Design -->
+    <section class="premium-services-section">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-6 fw-bold mb-3">Our Executive Consulting Engagements</h2>
-                <p class="lead text-muted">Delivering decisive, strategic value across your entire technology ecosystem.</p>
+            <div class="premium-header">
+                <h2>Our Executive Consulting Engagements</h2>
+                <p class="lead">Delivering decisive, strategic value across your entire technology ecosystem.</p>
             </div>
             
-            <ul class="nav nav-pills nav-fill mb-4" id="itConsultingTabs" role="tablist">
-                <li class="nav-item" role="presentation"><button class="nav-link active fw-semibold" id="tech-strategy-tab" data-bs-toggle="pill" data-bs-target="#tech-strategy" type="button" role="tab" aria-controls="tech-strategy" aria-selected="true"><i class="bi bi-diagram-3 me-2"></i>Technology Strategy & Roadmap</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="digital-transformation-tab" data-bs-toggle="pill" data-bs-target="#digital-transformation" type="button" role="tab" aria-controls="digital-transformation" aria-selected="false"><i class="bi bi-arrow-up-right-circle me-2"></i>Digital Transformation</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link fw-semibold" id="infrastructure-optimization-tab" data-bs-toggle="pill" data-bs-target="#infrastructure-optimization" type="button" role="tab" aria-controls="infrastructure-optimization" aria-selected="false"><i class="bi bi-cloud-check me-2"></i>Cloud & Infrastructure</button></li>
+            <!-- Premium Tab Navigation -->
+            <ul class="nav nav-pills nav-fill premium-nav-pills" id="itConsultingTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tech-strategy-tab" data-bs-toggle="pill" data-bs-target="#tech-strategy" type="button" role="tab" aria-controls="tech-strategy" aria-selected="true">
+                        <i class="bi bi-diagram-3 me-2"></i><span>Technology Strategy</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="digital-transformation-tab" data-bs-toggle="pill" data-bs-target="#digital-transformation" type="button" role="tab" aria-controls="digital-transformation" aria-selected="false">
+                        <i class="bi bi-arrow-up-right-circle me-2"></i><span>Digital Transformation</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="infrastructure-optimization-tab" data-bs-toggle="pill" data-bs-target="#infrastructure-optimization" type="button" role="tab" aria-controls="infrastructure-optimization" aria-selected="false">
+                        <i class="bi bi-cloud-check me-2"></i><span>Cloud & Infrastructure</span>
+                    </button>
+                </li>
             </ul>
 
-            <div class="tab-content" id="itConsultingTabsContent">
-                <div class="tab-pane fade show active" id="tech-strategy" role="tabpanel" aria-labelledby="tech-strategy-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Architecting Your Blueprint for Market Leadership</h4>
-                            <p class="mb-3">We move beyond simple IT planning. We architect a definitive technology roadmap that directly fuels your corporate objectives, ensuring every tech investment creates a competitive advantage in the Indian market.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>IT Landscape & Competitive Gap Analysis</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Actionable 3-Year Technology & Innovation Roadmap</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unbiased Vendor & Platform Selection Advisory</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Rigorous TCO & Business Case ROI Analysis</li>
+            <!-- Premium Tab Content -->
+            <div class="tab-content premium-tab-content" id="itConsultingTabsContent">
+                <!-- Technology Strategy Tab -->
+                <div class="tab-pane fade show active premium-tab-pane" id="tech-strategy" role="tabpanel" aria-labelledby="tech-strategy-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <h4>Architecting Your Blueprint for Market Leadership</h4>
+                            <p class="lead">
+                                We move beyond simple IT planning. We architect a definitive technology roadmap that directly fuels your corporate objectives, ensuring every tech investment creates a competitive advantage.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>IT Landscape & Competitive Gap Analysis</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Actionable 3-Year Technology & Innovation Roadmap</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Unbiased Vendor & Platform Selection Advisory</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Rigorous TCO & Business Case ROI Analysis</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">Strategic Planning</span>
+                                <span class="premium-tech-badge">Technology Roadmap</span>
+                                <span class="premium-tech-badge">ROI Analysis</span>
+                                <span class="premium-tech-badge">Vendor Selection</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-diagram-3 premium-service-icon"></i>
+                            <h4>Strategic Technology Leadership</h4>
+                            <p class="lead">Strategic technology planning delivers 250% ROI by aligning IT investments with business objectives and competitive positioning.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-compass"></i>Future-ready technology architecture</li>
+                                <li><i class="bi bi-compass"></i>Competitive advantage positioning</li>
+                                <li><i class="bi bi-compass"></i>Investment optimization frameworks</li>
+                                <li><i class="bi bi-compass"></i>Risk mitigation strategies</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="/assets/img/services/A visual that clearly communicates long-term planning and vision.png" class="img-fluid" alt="A detailed 3-year technology roadmap designed by our consultants for an Indian enterprise." loading="lazy"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="digital-transformation" role="tabpanel" aria-labelledby="digital-transformation-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Leading Your Industry's Digital Disruption</h4>
-                            <p class="mb-3">Digital transformation is not a project; it's a strategic imperative. We guide your organization through this complex journey, from automating core processes to launching disruptive digital business models.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Digital Maturity & Opportunity Assessment</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Intelligent Automation (RPA & AI) Strategy</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Enterprise-Wide Change Management & Adoption</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Frameworks for a Data-Driven Culture</li>
+
+                <!-- Digital Transformation Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="digital-transformation" role="tabpanel" aria-labelledby="digital-transformation-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-arrow-up-right-circle"></i>
+                            </div>
+                            <h4>Leading Your Industry's Digital Disruption</h4>
+                            <p class="lead">
+                                Digital transformation is not a project; it's a strategic imperative. We guide your organization through this complex journey, from automating core processes to launching disruptive digital business models.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Digital Maturity & Opportunity Assessment</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Intelligent Automation (RPA & AI) Strategy</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Enterprise-Wide Change Management & Adoption</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Frameworks for a Data-Driven Culture</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">RPA & AI</span>
+                                <span class="premium-tech-badge">Change Management</span>
+                                <span class="premium-tech-badge">Process Automation</span>
+                                <span class="premium-tech-badge">Data Analytics</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-arrow-up-right-circle premium-service-icon"></i>
+                            <h4>Transformation Results</h4>
+                            <p class="lead">Digital transformation initiatives reduce operational costs by 40% while increasing revenue opportunities by 300%.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-rocket"></i>Process automation & efficiency gains</li>
+                                <li><i class="bi bi-rocket"></i>Data-driven decision making</li>
+                                <li><i class="bi bi-rocket"></i>Customer experience enhancement</li>
+                                <li><i class="bi bi-rocket"></i>New business model innovation</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="/assets/img/services/An illustration showing business process automation transforming a company's workflow.png" class="img-fluid" alt="An infographic illustrating how our IT consulting automates workflows for a manufacturing client in India." loading="lazy"></div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="infrastructure-optimization" role="tabpanel" aria-labelledby="infrastructure-optimization-tab">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">Engineering a Resilient, Cost-Effective IT Foundation</h4>
-                            <p class="mb-3">Your infrastructure must be an enabler, not a bottleneck. We architect a secure, scalable, and financially optimized IT foundation (on-premise, hybrid, or cloud) that powers your growth while guaranteeing operational resilience.</p>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cloud Readiness & Migration Strategy (AWS, Azure, GCP)</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Hybrid Cloud & Multi-Cloud Architecture Design</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cybersecurity Posture Fortification & Risk Mitigation</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cloud Financial Management (FinOps) & Cost Optimization</li>
+
+                <!-- Infrastructure Optimization Tab -->
+                <div class="tab-pane fade premium-tab-pane" id="infrastructure-optimization" role="tabpanel" aria-labelledby="infrastructure-optimization-tab">
+                    <div class="premium-two-column">
+                        <div class="premium-content-card">
+                            <div class="premium-visual-element">
+                                <i class="bi bi-cloud-check"></i>
+                            </div>
+                            <h4>Engineering a Resilient, Cost-Effective IT Foundation</h4>
+                            <p class="lead">
+                                Your infrastructure must be an enabler, not a bottleneck. We architect a secure, scalable, and financially optimized IT foundation that powers your growth while guaranteeing operational resilience.
+                            </p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i>Cloud Readiness & Migration Strategy (AWS, Azure, GCP)</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Hybrid Cloud & Multi-Cloud Architecture Design</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Cybersecurity Posture Fortification & Risk Mitigation</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Cloud Financial Management (FinOps) & Cost Optimization</li>
+                            </ul>
+                            <div class="premium-tech-badges">
+                                <span class="premium-tech-badge">AWS</span>
+                                <span class="premium-tech-badge">Azure</span>
+                                <span class="premium-tech-badge">Google Cloud</span>
+                                <span class="premium-tech-badge">Cybersecurity</span>
+                            </div>
+                        </div>
+                        <div class="premium-content-card">
+                            <i class="bi bi-cloud-check premium-service-icon"></i>
+                            <h4>Infrastructure Excellence</h4>
+                            <p class="lead">Modern cloud infrastructure delivers 60% cost reduction and 99.99% uptime while providing unlimited scalability.</p>
+                            <ul class="premium-feature-list">
+                                <li><i class="bi bi-shield-check"></i>Enterprise-grade security & compliance</li>
+                                <li><i class="bi bi-shield-check"></i>Auto-scaling & high availability</li>
+                                <li><i class="bi bi-shield-check"></i>Cost optimization & financial management</li>
+                                <li><i class="bi bi-shield-check"></i>Disaster recovery & business continuity</li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 text-center mt-3 mt-lg-0"><img src="/assets/img/services/A diagram of a secure and scalable hybrid cloud infrastructure.png" class="img-fluid" alt="A secure and scalable hybrid cloud architecture diagram designed for a financial services client in Mumbai." loading="lazy"></div>
                     </div>
                 </div>
             </div>
