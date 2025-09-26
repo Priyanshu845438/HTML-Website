@@ -1,0 +1,191 @@
+/* Testimonial CTA Component Styles - Improved Overlapping Design */
+
+.testimonial-cta-section {
+  overflow: hidden; /* Prevents horizontal scroll */
+  padding: 4rem 0;
+}
+
+/* The dark blue panel on the right */
+.cta-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%; /* Adjust the split point */
+  height: 100%;
+  background-color: #0d3166; /* A professional navy blue */
+  z-index: 1;
+}
+
+/* Overlapping card styling */
+.testimonial-cta-section .card {
+  background: white;
+  border: none;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  z-index: 3;
+  position: relative;
+}
+
+/* Carousel controls styling */
+.carousel-controls .btn {
+  width: 40px;
+  height: 40px;
+  border-width: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-controls .btn:hover {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #0d2649;
+}
+
+/* CTA section styling */
+.testimonial-cta-section .col-lg-5 {
+  z-index: 2;
+  position: relative;
+  color: white !important;
+}
+
+.testimonial-cta-section .col-lg-5 * {
+  color: white !important;
+}
+
+.testimonial-cta-section .col-lg-5 h1 {
+  color: white !important;
+}
+
+.testimonial-cta-section .col-lg-5 p {
+  color: white !important;
+}
+
+/* Testimonial content inside the card */
+.testimonial-cta-section .carousel-item {
+  padding: 0;
+}
+
+.testimonial-cta-section .display-4 {
+  margin-bottom: 1rem;
+}
+
+.testimonial-cta-section h2 {
+  color: var(--bs-dark);
+  font-size: 1.75rem;
+}
+
+.testimonial-cta-section .lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Avatar styling */
+.testimonial-cta-section .rounded-circle {
+  object-fit: cover;
+  border: 3px solid var(--bs-light);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* --- MOBILE RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 991.98px) {
+  /* On mobile, we stack instead of overlap */
+  .cta-panel {
+    position: relative; /* Change from absolute to relative */
+    width: 100%;
+    height: auto;
+    padding: 4rem 1rem; /* Give it its own space */
+    margin-top: 2rem; /* Add some separation */
+  }
+
+  .testimonial-cta-section .card {
+    margin-bottom: 2rem; /* Add space between the card and the CTA panel */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important; /* Keep a nice shadow */
+  }
+  
+  .testimonial-cta-section .col-lg-5 {
+    padding-left: 1rem !important; /* Reset desktop padding */
+  }
+
+  .testimonial-cta-section {
+    padding: 3rem 0;
+  }
+
+  /* Center content on mobile */
+  .testimonial-cta-section .text-center {
+    text-align: center !important;
+  }
+
+  /* Adjust card padding on mobile */
+  .testimonial-cta-section .card {
+    padding: 1.5rem !important;
+  }
+
+  .testimonial-cta-section .card .p-4 {
+    padding: 1.5rem !important;
+  }
+
+  .testimonial-cta-section .card .p-lg-5 {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .testimonial-cta-section {
+    padding: 2rem 0;
+  }
+
+  .testimonial-cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-cta-section .display-3 {
+    font-size: 2rem;
+  }
+
+  .testimonial-cta-section .lead {
+    font-size: 1rem;
+  }
+
+  /* Stack buttons vertically on very small screens */
+  .testimonial-cta-section .btn {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .testimonial-cta-section .btn.me-2 {
+    margin-right: 0 !important;
+  }
+}
+
+/* Improved hover effects */
+.testimonial-cta-section .btn-light:hover {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: white;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.testimonial-cta-section .btn-outline-light:hover {
+  background-color: white;
+  color: var(--bs-primary);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Animation for the overlapping card */
+.testimonial-cta-section .card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
