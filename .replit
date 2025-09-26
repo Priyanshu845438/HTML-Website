@@ -14,14 +14,6 @@ run = ["python3", "server.py"]
 localPort = 5000
 externalPort = 80
 
-[[ports]]
-localPort = 41385
-externalPort = 3001
-
-[[ports]]
-localPort = 41841
-externalPort = 3000
-
 [env]
 PORT = "5000"
 

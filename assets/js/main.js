@@ -318,12 +318,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1500); // Wait for components to load
 });
 
-// Function to load only first 6 case studies for home page
+// Function to load only first 8 case studies for home page
 function loadHomeCaseStudies() {
     const homeGrid = document.getElementById('home-case-studies-grid');
     if (homeGrid && typeof allCaseStudies !== 'undefined' && typeof generateCaseStudyCard !== 'undefined') {
-        // Take only first 6 case studies for home page
-        const featuredCaseStudies = allCaseStudies.slice(0, 6);
+        // Take only first 8 case studies for home page
+        const featuredCaseStudies = allCaseStudies.slice(0, 8);
         homeGrid.innerHTML = featuredCaseStudies.map(generateCaseStudyCard).join('');
         
         // Initialize modal functionality after loading cards
