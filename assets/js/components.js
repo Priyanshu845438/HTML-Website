@@ -188,7 +188,7 @@ class ComponentLoader {
             const html = await response.text();
             
             const customizedHtml = html
-                .replace('Ideovent transformed our online presence completely. Their team delivered a website that not only looks stunning but also performs exceptionally well.', content)
+                .replace('Acadify solutions transformed our online presence completely. Their team delivered a website that not only looks stunning but also performs exceptionally well.', content)
                 .replace('Kavita Prem', name)
                 .replace('CEO, TechStart Inc.', title)
                 .replace('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4A8PhcI7V3miXTmY26npWgI2nFvNxDRs_bg&s', avatar);
