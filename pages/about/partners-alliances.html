@@ -43,13 +43,26 @@
     /// 2. REWRITTEN & OPTIMIZED PAGE CONTENT
     ================================================================== -->
     
-    <!-- Hero Section -->
-    <section class="page-header-section py-5" style="background: linear-gradient(135deg, #0d3269 0%, #1e4f8b 100%);">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-10">
-                    <h1 class="display-4 fw-bold text-white mb-4">Building India's Digital Ecosystem, Together.</h1>
-                    <p class="lead text-white mb-5">Our strategic alliances with global technology leaders and key Indian industry bodies ensure we deliver solutions that are not just innovative, but also robust, secure, and market-relevant.</p>
+    <!-- Premium Hero Section -->
+    <section class="premium-hero-section py-0 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0d3269 0%, #1e4f8b 100%); min-height: 70vh;">
+        <div class="hero-overlay position-absolute w-100 h-100" style="background: repeating-linear-gradient(60deg, transparent, transparent 50px, rgba(255,255,255,0.02) 50px, rgba(255,255,255,0.02) 90px); opacity: 0.4;"></div>
+        
+        <div class="container position-relative h-100">
+            <div class="row align-items-center min-vh-70">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="hero-content" style="animation: fadeInUp 1s ease-out;">
+                        <div class="badge-premium mb-4" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #e2e8f0; padding: 8px 20px; border-radius: 25px; font-size: 14px; font-weight: 500; display: inline-block;">
+                            <i class="bi bi-diagram-3 me-2"></i>Strategic Partnerships
+                        </div>
+                        <h1 class="display-3 fw-bold text-white mb-4 lh-1" style="font-family: 'Inter', sans-serif; letter-spacing: -1px;">
+                            Building India's 
+                            <span class="text-gradient" style="background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Digital Ecosystem</span>
+                        </h1>
+                        <p class="lead text-light mb-5 opacity-90" style="font-size: 1.25rem; line-height: 1.7; max-width: 600px; margin: 0 auto;">Our strategic alliances with global technology leaders and key Indian industry bodies ensure we deliver solutions that are innovative, robust, secure, and market-relevant.</p>
+                        <a href="#partners-ecosystem" class="btn btn-premium btn-lg px-4 py-3 rounded-pill" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); color: white; font-weight: 600; transition: all 0.3s ease;">
+                            <i class="bi bi-arrow-down-circle me-2"></i>Explore Partnerships
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,16 +125,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6"><div class="h-100 d-flex align-items-center"><div><h2 class="display-6 fw-bold mb-4">Partner With Us for Mutual Growth</h2><p class="lead mb-4">Join our growing network of technology and business partners. Together, we can deliver exceptional value to clients and drive success in the Indian market.</p><div class="mb-4"><div class="d-flex align-items-center mb-3"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i><span>Access exclusive partner resources & training</span></div><div class="d-flex align-items-center mb-3"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i><span>Collaborate on co-marketing & lead sharing</span></div><div class="d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i><span>Benefit from revenue sharing & incentives</span></div></div></div></div></div>
-                <div class="col-lg-6"><div class="card border-0 shadow-lg"><div class="card-body p-5"><h4 class="fw-bold mb-4">Partnership Inquiry</h4>
-                    <form id="partnershipForm" method="POST">
-                        <div class="mb-3"><label for="companyName" class="form-label">Company Name</label><input type="text" class="form-control" id="companyName" name="company_name" required></div>
-                        <div class="mb-3"><label for="contactName" class="form-label">Contact Person</label><input type="text" class="form-control" id="contactName" name="contact_person" required></div>
-                        <div class="mb-3"><label for="email" class="form-label">Business Email</label><input type="email" class="form-control" id="email" name="email" required></div>
-                        <div class="mb-3"><label for="phone" class="form-label">Phone Number</label><input type="tel" class="form-control" id="phone" name="phone"></div>
-                        <div class="mb-3"><label for="partnershipType" class="form-label">Partnership Interest</label><select class="form-select" id="partnershipType" name="business_type"><option value="">Select partnership type</option><option value="technology">Technology Partnership</option><option value="reseller">Reseller Partnership</option><option value="strategic">Strategic Alliance</option><option value="referral">Referral Partnership</option></select></div>
-                        <div class="mb-4"><label for="message" class="form-label">Tell us about your company</label><textarea class="form-control" id="message" name="message" rows="3" placeholder="Brief description of your company and partnership goals"></textarea></div>
-                        <div id="partnership-form-message" class="mb-3" style="display: none;"></div>
-                        <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill"><i class="bi bi-send me-2"></i>Submit Partnership Inquiry</button>
+                <div class="col-lg-6"><div class="card border-0 shadow-lg"><div class="card-body p-5"><h4 class="fw-bold mb-4">Get In Touch</h4>
+                    <form id="contactForm" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="first_name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="last_name" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="companyName" class="form-label">Company Name</label>
+                            <input type="text" class="form-control" id="companyName" name="company_name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="projectType" class="form-label">Project Interest</label>
+                            <select class="form-select" id="projectType" name="project_type">
+                                <option value="">Select project type</option>
+                                <option value="website">Website Development</option>
+                                <option value="mobile-app">Mobile App Development</option>
+                                <option value="ecommerce">E-commerce Platform</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                                <option value="branding">Branding & Design</option>
+                                <option value="consultation">Business Consultation</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about your project requirements, goals, and timeline"></textarea>
+                        </div>
+                        <div id="contact-form-message" class="mb-3" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill">
+                            <i class="bi bi-send me-2"></i>Send Message
+                        </button>
                     </form>
                 </div></div></div>
             </div>
@@ -140,27 +189,27 @@
     <script src="/assets/js/main.js"></script>
     
     <script>
-        // Partnership Form Handler
-        document.getElementById('partnershipForm').addEventListener('submit', function(e) {
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             const button = this.querySelector('button[type="submit"]');
             const originalText = button.innerHTML;
-            const messageDiv = document.getElementById('partnership-form-message');
+            const messageDiv = document.getElementById('contact-form-message');
             
             // Show loading state
-            button.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Submitting...';
+            button.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Sending...';
             button.disabled = true;
             
             const formData = new FormData(this);
             
-            fetch('/handlers/partner_handler.php', { method: 'POST', body: formData })
+            fetch('/handlers/contact_handler.php', { method: 'POST', body: formData })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
                     messageDiv.innerHTML = `<div class="alert alert-success"><i class="bi bi-check-circle me-2"></i>${data.message}</div>`;
                     messageDiv.style.display = 'block';
-                    button.innerHTML = '<i class="bi bi-check-circle me-2"></i>Inquiry Submitted!';
+                    button.innerHTML = '<i class="bi bi-check-circle me-2"></i>Message Sent!';
                     button.classList.remove('btn-primary');
                     button.classList.add('btn-success');
                     setTimeout(() => {

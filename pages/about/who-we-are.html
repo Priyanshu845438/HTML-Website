@@ -53,21 +53,45 @@
     /// 2. REWRITTEN & OPTIMIZED PAGE CONTENT
     ================================================================== -->
     
-    <!-- Hero Section -->
-    <section class="page-header-section py-5 hero-section" style="background: linear-gradient(135deg, #0d3269 0%, #1e4f8b 100%);">
-        <div class="container">
-            <div class="row align-items-center g-5">
+    <!-- Premium Hero Section -->
+    <section class="premium-hero-section py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0d3269 0%, #16213e 25%, #1e4f8b 75%, #203a43 100%); min-height: 80vh; padding-top: 5rem; padding-bottom: 5rem;">
+        <!-- Subtle animated background -->
+        <div class="hero-particles position-absolute w-100 h-100" style="top: 0; left: 0; z-index: 1; opacity: 0.3;">
+            <div class="particle" style="position: absolute; top: 15%; left: 15%; width: 3px; height: 3px; background: rgba(255,255,255,0.4); border-radius: 50%; animation: float 5s ease-in-out infinite;"></div>
+            <div class="particle" style="position: absolute; top: 70%; left: 75%; width: 4px; height: 4px; background: rgba(255,255,255,0.3); border-radius: 50%; animation: float 7s ease-in-out infinite reverse;"></div>
+            <div class="particle" style="position: absolute; top: 45%; left: 25%; width: 2px; height: 2px; background: rgba(255,255,255,0.5); border-radius: 50%; animation: float 6s ease-in-out infinite;"></div>
+        </div>
+        
+        <div class="container position-relative" style="z-index: 3;">
+            <div class="row align-items-center min-vh-80">
                 <div class="col-lg-6">
-                    <!-- **Content Rewrite:** Headline is now a powerful, client-focused statement. -->
-                    <h1 class="display-4 fw-bold text-white mb-4">A Digital Partner Born to Serve Indian Ambition.</h1>
-                    <p class="lead text-white mb-4">We are more than a tech company. We are a team of Indian strategists, designers, and developers dedicated to building the digital solutions that will power the next generation of businesses in India.</p>
+                    <div class="hero-content" style="animation: slideInLeft 1s ease-out;">
+                        <div class="badge-premium mb-4" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #e2e8f0; padding: 8px 20px; border-radius: 25px; font-size: 14px; font-weight: 500; display: inline-block;">
+                            <i class="bi bi-people me-2"></i>Our Story
+                        </div>
+                        <h1 class="display-3 fw-bold text-white mb-4 lh-1" style="font-family: 'Inter', sans-serif; letter-spacing: -1px;">
+                            Digital Partner Born for 
+                            <span class="text-gradient" style="background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Indian Ambition</span>
+                        </h1>
+                        <p class="lead text-light mb-5 opacity-90" style="font-size: 1.25rem; line-height: 1.7;">We are more than a tech company. We are a team of Indian strategists, designers, and developers dedicated to building digital solutions that power the next generation of businesses across India.</p>
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <a href="#our-story" class="btn btn-premium btn-lg px-4 py-3 rounded-pill" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); color: white; font-weight: 600; transition: all 0.3s ease;">
+                                <i class="bi bi-arrow-down-circle me-2"></i>Our Journey
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 text-center">
-                    <!-- **Imagery & SEO:** New image path and highly specific alt text. -->
-                    <img src="/assets/img/acadify-solution-indian-team.png" 
-                         alt="The diverse and professional Indian team at Acadify Solution collaborating in their Delhi office." 
-                         class="img-fluid rounded-4 shadow-lg"
-                         style="max-height: 400px; object-fit: cover;">
+                <div class="col-lg-6">
+                    <div class="hero-visual" style="animation: slideInRight 1s ease-out;">
+                        <div class="team-showcase position-relative">
+                            <div class="floating-image mx-auto" style="max-width: 500px; animation: floatCard 6s ease-in-out infinite;">
+                                <img src="/assets/img/acadify-solution-indian-team.png" 
+                                     alt="The diverse and professional Indian team at Acadify Solution collaborating in their office" 
+                                     class="img-fluid rounded-4 shadow-2xl"
+                                     style="border: 3px solid rgba(255,255,255,0.2); object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

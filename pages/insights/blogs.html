@@ -71,100 +71,201 @@
     <!-- Navigation -->
     <div id="site-header"></div>
     
-    <!-- Hero Section -->
-    <section class="page-header-section py-5 bg-primary bg-gradient text-white">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-10">
-                    <h1 class="display-4 fw-bold mb-4">The Acadify Blog</h1>
-                    <p class="lead mb-5">Insights, best practices, and thought leadership from our experts.</p>
+    <!-- Premium Hero Section -->
+    <section class="premium-hero-section py-0 position-relative overflow-hidden" style="background: linear-gradient(135deg, #0d3269 0%, #1e4f8b 100%); min-height: 70vh;">
+        <div class="hero-overlay position-absolute w-100 h-100" style="background: repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(255,255,255,0.02) 80px, rgba(255,255,255,0.02) 120px); opacity: 0.3;"></div>
+        
+        <div class="container position-relative h-100">
+            <div class="row align-items-center min-vh-70">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="hero-content" style="animation: fadeInUp 1s ease-out;">
+                        <div class="badge-premium mb-4" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #e2e8f0; padding: 8px 20px; border-radius: 25px; font-size: 14px; font-weight: 500; display: inline-block;">
+                            <i class="bi bi-journal-text me-2"></i>Expert Insights Hub
+                        </div>
+                        <h1 class="display-3 fw-bold text-white mb-4 lh-1" style="font-family: 'Inter', sans-serif; letter-spacing: -1px;">
+                            Actionable Insights for 
+                            <span class="text-gradient" style="background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Indian Businesses</span>
+                        </h1>
+                        <p class="lead text-light mb-5 opacity-90" style="font-size: 1.25rem; line-height: 1.7; max-width: 600px; margin: 0 auto;">Discover expert strategies, proven methodologies, and actionable insights tailored specifically for businesses thriving in the Indian market.</p>
+                        <a href="#blog-content" class="btn btn-premium btn-lg px-4 py-3 rounded-pill" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); color: white; font-weight: 600; transition: all 0.3s ease;">
+                            <i class="bi bi-arrow-down-circle me-2"></i>Explore Articles
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-5">
+    <!-- Blog Filters Section -->
+    <section class="py-4" style="background: #f8fafc;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap justify-content-center gap-3" id="blog-filters">
+                        <button class="btn filter-btn-premium active rounded-pill px-4 py-2" data-filter="all" style="background: #0d3269; color: white; border: none; font-weight: 600; transition: all 0.3s ease;"><i class="bi bi-grid me-2"></i>All Posts</button>
+                        <button class="btn filter-btn-premium rounded-pill px-4 py-2" data-filter="local-seo" style="background: rgba(13, 50, 105, 0.1); color: #0d3269; border: 1px solid rgba(13, 50, 105, 0.2); font-weight: 600; transition: all 0.3s ease;"><i class="bi bi-geo-alt me-2"></i>Local SEO</button>
+                        <button class="btn filter-btn-premium rounded-pill px-4 py-2" data-filter="ecommerce" style="background: rgba(13, 50, 105, 0.1); color: #0d3269; border: 1px solid rgba(13, 50, 105, 0.2); font-weight: 600; transition: all 0.3s ease;"><i class="bi bi-cart me-2"></i>E-commerce</button>
+                        <button class="btn filter-btn-premium rounded-pill px-4 py-2" data-filter="pricing" style="background: rgba(13, 50, 105, 0.1); color: #0d3269; border: 1px solid rgba(13, 50, 105, 0.2); font-weight: 600; transition: all 0.3s ease;"><i class="bi bi-calculator me-2"></i>Pricing</button>
+                        <button class="btn filter-btn-premium rounded-pill px-4 py-2" data-filter="marketing" style="background: rgba(13, 50, 105, 0.1); color: #0d3269; border: 1px solid rgba(13, 50, 105, 0.2); font-weight: 600; transition: all 0.3s ease;"><i class="bi bi-megaphone me-2"></i>Marketing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-content" class="py-5" style="background: linear-gradient(180deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);">
     <div class="container">
 
-        <!-- Section Header (Optimized) -->
+        <!-- Premium Section Header -->
         <div class="text-center mb-5">
-        <h2 class="display-5 fw-bold">Actionable Insights for <span class="text-primary">Indian Businesses</span></h2>
-        <hr class="mx-auto" style="width: 70px; border: 2px solid #0d336b; opacity: 1;">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #1e293b; line-height: 1.2;">Knowledge That Drives Growth</h2>
+                    <p class="lead text-muted mb-4">Curated insights from our experts to help you navigate the digital landscape</p>
+                    <div class="mx-auto" style="width: 60px; height: 4px; background: linear-gradient(90deg, #0d3269, #1e4f8b); border-radius: 2px; opacity: 0.8;"></div>
+                </div>
+            </div>
         </div>
 
-        <!-- Blog Grid (Completely New, Customer-Focused Topics) -->
+        <!-- Premium Blog Grid -->
         <div class="row g-4">
 
         <!-- Blog Post 1: Local SEO -->
-        <div class="col-lg-4 col-md-6">
-            <div class="card blog-card h-100 border-0 shadow-sm">
-            <img src="/assets/img/blogs/local-seo-india.jpg" class="card-img-top" alt="A map of India with pins on Delhi, Mumbai, and Kolkata for local SEO.">
-            <div class="card-body">
-                <h5 class="card-title fw-bold text-primary">How to Dominate Local Search in Delhi, Mumbai & Kolkata</h5>
-                <p class="card-text text-muted small">A step-by-step guide to ranking #1 on Google Maps, attracting local customers, and driving growth in India's top metros.</p>
-                <a href="/pages/blog/dominate-local-search-india.html" class="read-more-link fw-bold text-decoration-none">Read More</a>
-            </div>
-            </div>
+        <div class="col-lg-4 col-md-6 blog-item" data-category="local-seo">
+            <article class="blog-card-premium h-100 position-relative overflow-hidden" style="background: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.4s ease; border: 1px solid rgba(203, 213, 225, 0.3);">
+                <div class="image-container position-relative overflow-hidden" style="height: 240px;">
+                    <img src="/assets/img/blogs/local-seo-india.jpg" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" alt="Local SEO strategy for Indian businesses">
+                    <div class="image-overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(13, 50, 105, 0.8), rgba(30, 79, 139, 0.6)); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    <div class="read-time position-absolute top-3 end-3" style="background: rgba(0,0,0,0.7); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 500;">
+                        <i class="bi bi-clock me-1"></i>5 min read
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <div class="category-badge mb-3" style="color: #0d3269; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="bi bi-geo-alt me-1"></i>Local SEO
+                    </div>
+                    <h5 class="card-title fw-bold mb-3 lh-base" style="color: #1e293b; font-size: 1.1rem;">How to Dominate Local Search in Delhi, Mumbai & Kolkata</h5>
+                    <p class="card-text text-muted mb-4" style="font-size: 0.9rem; line-height: 1.6;">A comprehensive step-by-step guide to ranking #1 on Google Maps, attracting qualified local customers, and driving sustainable growth.</p>
+                    <a href="/pages/blog/dominate-local-search-india.html" class="read-more-link d-inline-flex align-items-center text-decoration-none fw-semibold" style="color: #0d3269; font-size: 0.9rem; transition: all 0.3s ease;">
+                        Read Complete Guide <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </article>
         </div>
 
         <!-- Blog Post 2: E-commerce -->
-        <div class="col-lg-4 col-md-6">
-            <div class="card blog-card h-100 border-0 shadow-sm">
-            <img src="/assets/img/blogs/ecommerce-made-in-india.png" class="card-img-top" alt="A 'Made in India' product ready for global e-commerce shipping.">
-            <div class="card-body">
-                <h5 class="card-title fw-bold text-primary">'Made in India' for the World: 5 Must-Haves for Your E-commerce Website</h5>
-                <p class="card-text text-muted small">Learn the essentials for taking your Indian brand global, from integrating UPI and international payments to navigating logistics.</p>
-                <a href="/pages/blog/ecommerce-made-in-india.html" class="read-more-link fw-bold text-decoration-none">Read More</a>
-            </div>
-            </div>
+        <div class="col-lg-4 col-md-6 blog-item" data-category="ecommerce">
+            <article class="blog-card-premium h-100 position-relative overflow-hidden" style="background: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.4s ease; border: 1px solid rgba(203, 213, 225, 0.3);">
+                <div class="image-container position-relative overflow-hidden" style="height: 240px;">
+                    <img src="/assets/img/blogs/ecommerce-made-in-india.png" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" alt="A 'Made in India' product ready for global e-commerce shipping">
+                    <div class="image-overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(13, 50, 105, 0.8), rgba(30, 79, 139, 0.6)); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    <div class="read-time position-absolute top-3 end-3" style="background: rgba(0,0,0,0.7); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 500;">
+                        <i class="bi bi-clock me-1"></i>6 min read
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <div class="category-badge mb-3" style="color: #0d3269; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="bi bi-globe me-1"></i>E-commerce
+                    </div>
+                    <h5 class="card-title fw-bold mb-3 lh-base" style="color: #1e293b; font-size: 1.1rem;">'Made in India' for the World: 5 Must-Haves for Your E-commerce Website</h5>
+                    <p class="card-text text-muted mb-4" style="font-size: 0.9rem; line-height: 1.6;">Learn the essentials for taking your Indian brand global, from integrating UPI and international payments to navigating logistics.</p>
+                    <a href="/pages/blog/ecommerce-made-in-india.html" class="read-more-link d-inline-flex align-items-center text-decoration-none fw-semibold" style="color: #0d3269; font-size: 0.9rem; transition: all 0.3s ease;">
+                        Read Complete Guide <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </article>
         </div>
 
         <!-- Blog Post 3: Website Cost -->
-        <div class="col-lg-4 col-md-6">
-            <div class="card blog-card h-100 border-0 shadow-sm">
-            <img src="/assets/img/blogs/website-cost-india.jpg" class="card-img-top" alt="A person planning a website budget on a whiteboard.">
-            <div class="card-body">
-                <h5 class="card-title fw-bold text-primary">What's the Real Cost of a Business Website in India? (2025 Guide)</h5>
-                <p class="card-text text-muted small">A transparent breakdown of web development costs in India, from basic sites to complex e-commerce platforms. Budget smarter.</p>
-                <a href="/pages/blog/website-cost-india.html" class="read-more-link fw-bold text-decoration-none">Read More</a>
-            </div>
-            </div>
+        <div class="col-lg-4 col-md-6 blog-item" data-category="pricing">
+            <article class="blog-card-premium h-100 position-relative overflow-hidden" style="background: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.4s ease; border: 1px solid rgba(203, 213, 225, 0.3);">
+                <div class="image-container position-relative overflow-hidden" style="height: 240px;">
+                    <img src="/assets/img/blogs/website-cost-india.jpg" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" alt="A person planning a website budget on a whiteboard">
+                    <div class="image-overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(13, 50, 105, 0.8), rgba(30, 79, 139, 0.6)); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    <div class="read-time position-absolute top-3 end-3" style="background: rgba(0,0,0,0.7); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 500;">
+                        <i class="bi bi-clock me-1"></i>8 min read
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <div class="category-badge mb-3" style="color: #0d3269; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="bi bi-calculator me-1"></i>Pricing Guide
+                    </div>
+                    <h5 class="card-title fw-bold mb-3 lh-base" style="color: #1e293b; font-size: 1.1rem;">What's the Real Cost of a Business Website in India? (2025 Guide)</h5>
+                    <p class="card-text text-muted mb-4" style="font-size: 0.9rem; line-height: 1.6;">A transparent breakdown of web development costs in India, from basic sites to complex e-commerce platforms. Budget smarter.</p>
+                    <a href="/pages/blog/website-cost-india.html" class="read-more-link d-inline-flex align-items-center text-decoration-none fw-semibold" style="color: #0d3269; font-size: 0.9rem; transition: all 0.3s ease;">
+                        Read Complete Guide <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </article>
         </div>
 
         <!-- Blog Post 4: Social Media Marketing -->
-        <div class="col-lg-4 col-md-6">
-            <div class="card blog-card h-100 border-0 shadow-sm">
-            <img src="/assets/img/blogs/social-media-india.jpg" class="card-img-top" alt="A smartphone screen showing various social media apps popular in India.">
-            <div class="card-body">
-                <h5 class="card-title fw-bold text-primary">Beyond WhatsApp: Which Social Media Platform is Right for Your Indian Business?</h5>
-                <p class="card-text text-muted small">Stop wasting your marketing budget. We analyze the best platforms to reach your target customers in the diverse Indian market.</p>
-                <a href="/pages/blog/social-media-india.html" class="read-more-link fw-bold text-decoration-none">Read More</a>
-            </div>
-            </div>
+        <div class="col-lg-4 col-md-6 blog-item" data-category="marketing">
+            <article class="blog-card-premium h-100 position-relative overflow-hidden" style="background: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.4s ease; border: 1px solid rgba(203, 213, 225, 0.3);">
+                <div class="image-container position-relative overflow-hidden" style="height: 240px;">
+                    <img src="/assets/img/blogs/social-media-india.jpg" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" alt="A smartphone screen showing various social media apps popular in India">
+                    <div class="image-overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(13, 50, 105, 0.8), rgba(30, 79, 139, 0.6)); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    <div class="read-time position-absolute top-3 end-3" style="background: rgba(0,0,0,0.7); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 500;">
+                        <i class="bi bi-clock me-1"></i>7 min read
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <div class="category-badge mb-3" style="color: #0d3269; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="bi bi-share me-1"></i>Social Media
+                    </div>
+                    <h5 class="card-title fw-bold mb-3 lh-base" style="color: #1e293b; font-size: 1.1rem;">Beyond WhatsApp: Which Social Media Platform is Right for Your Indian Business?</h5>
+                    <p class="card-text text-muted mb-4" style="font-size: 0.9rem; line-height: 1.6;">Stop wasting your marketing budget. We analyze the best platforms to reach your target customers in the diverse Indian market.</p>
+                    <a href="/pages/blog/social-media-india.html" class="read-more-link d-inline-flex align-items-center text-decoration-none fw-semibold" style="color: #0d3269; font-size: 0.9rem; transition: all 0.3s ease;">
+                        Read Complete Guide <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </article>
         </div>
 
         <!-- Blog Post 5: Mobile App ROI -->
-        <div class="col-lg-4 col-md-6">
-            <div class="card blog-card h-100 border-0 shadow-sm">
-            <img src="/assets/img/blogs/mobile-app-roi-sme.jpg" class="card-img-top" alt="A chart showing positive ROI for a business mobile app.">
-            <div class="card-body">
-                <h5 class="card-title fw-bold text-primary">An App for Your Business? Calculating the ROI for an Indian SME</h5>
-                <p class="card-text text-muted small">Is a mobile app a smart investment or an expensive mistake? Learn how to calculate the real return for your Small or Medium Enterprise.</p>
-                <a href="/pages/blog/mobile-app-roi-sme.html" class="read-more-link fw-bold text-decoration-none">Read More</a>
-            </div>
-            </div>
+        <div class="col-lg-4 col-md-6 blog-item" data-category="pricing">
+            <article class="blog-card-premium h-100 position-relative overflow-hidden" style="background: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.4s ease; border: 1px solid rgba(203, 213, 225, 0.3);">
+                <div class="image-container position-relative overflow-hidden" style="height: 240px;">
+                    <img src="/assets/img/blogs/mobile-app-roi-sme.jpg" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" alt="A chart showing positive ROI for a business mobile app">
+                    <div class="image-overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(13, 50, 105, 0.8), rgba(30, 79, 139, 0.6)); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    <div class="read-time position-absolute top-3 end-3" style="background: rgba(0,0,0,0.7); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 500;">
+                        <i class="bi bi-clock me-1"></i>9 min read
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <div class="category-badge mb-3" style="color: #0d3269; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="bi bi-phone me-1"></i>Mobile Strategy
+                    </div>
+                    <h5 class="card-title fw-bold mb-3 lh-base" style="color: #1e293b; font-size: 1.1rem;">An App for Your Business? Calculating the ROI for an Indian SME</h5>
+                    <p class="card-text text-muted mb-4" style="font-size: 0.9rem; line-height: 1.6;">Is a mobile app a smart investment or an expensive mistake? Learn how to calculate the real return for your Small or Medium Enterprise.</p>
+                    <a href="/pages/blog/mobile-app-roi-sme.html" class="read-more-link d-inline-flex align-items-center text-decoration-none fw-semibold" style="color: #0d3269; font-size: 0.9rem; transition: all 0.3s ease;">
+                        Read Complete Guide <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </article>
         </div>
 
         <!-- Blog Post 6: Website Speed -->
-        <div class="col-lg-4 col-md-6">
-            <div class="card blog-card h-100 border-0 shadow-sm">
-            <img src="/assets/img/blogs/website-speed-matters.jpg" class="card-img-top" alt="A website loading bar showing the importance of speed for user experience.">
-            <div class="card-body">
-                <h5 class="card-title fw-bold text-primary">Why a Slow Website is Losing You Customers (And How to Fix It)</h5>
-                <p class="card-text text-muted small">Every second counts. Discover how website speed impacts your sales and search rankings in India, and the steps to fix it, fast.</p>
-                <a href="/pages/blog/website-speed-matters.html" class="read-more-link fw-bold text-decoration-none">Read More</a>
-            </div>
-            </div>
+        <div class="col-lg-4 col-md-6 blog-item" data-category="marketing">
+            <article class="blog-card-premium h-100 position-relative overflow-hidden" style="background: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.4s ease; border: 1px solid rgba(203, 213, 225, 0.3);">
+                <div class="image-container position-relative overflow-hidden" style="height: 240px;">
+                    <img src="/assets/img/blogs/website-speed-matters.jpg" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;" alt="A website loading bar showing the importance of speed for user experience">
+                    <div class="image-overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(13, 50, 105, 0.8), rgba(30, 79, 139, 0.6)); opacity: 0; transition: opacity 0.3s ease;"></div>
+                    <div class="read-time position-absolute top-3 end-3" style="background: rgba(0,0,0,0.7); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 500;">
+                        <i class="bi bi-clock me-1"></i>6 min read
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <div class="category-badge mb-3" style="color: #0d3269; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <i class="bi bi-speedometer2 me-1"></i>Performance
+                    </div>
+                    <h5 class="card-title fw-bold mb-3 lh-base" style="color: #1e293b; font-size: 1.1rem;">Why a Slow Website is Losing You Customers (And How to Fix It)</h5>
+                    <p class="card-text text-muted mb-4" style="font-size: 0.9rem; line-height: 1.6;">Every second counts. Discover how website speed impacts your sales and search rankings in India, and the steps to fix it, fast.</p>
+                    <a href="/pages/blog/website-speed-matters.html" class="read-more-link d-inline-flex align-items-center text-decoration-none fw-semibold" style="color: #0d3269; font-size: 0.9rem; transition: all 0.3s ease;">
+                        Read Complete Guide <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </article>
         </div>
         </div>
     </div>
@@ -260,13 +361,95 @@
     </script>
 
     <style>
+        /* Premium Blogs Page Styles */
+        
+        /* Hero Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .min-vh-70 { min-height: 70vh; }
+        
+        /* Premium Blog Card Styling */
+        .blog-card-premium {
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .blog-card-premium:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+        }
+        
+        .blog-card-premium:hover .image-overlay {
+            opacity: 1;
+        }
+        
+        .blog-card-premium:hover img {
+            transform: scale(1.05);
+        }
+        
+        .read-more-link:hover {
+            color: #1e4f8b !important;
+            text-decoration: underline !important;
+        }
+        
+        .btn-premium:hover {
+            background: rgba(255,255,255,0.25) !important;
+            transform: translateY(-2px);
+        }
+        
+        /* Ultra Responsive Design */
+        @media (max-width: 768px) {
+            .display-3 {
+                font-size: 2.5rem !important;
+            }
+            
+            .premium-hero-section {
+                min-height: 60vh !important;
+            }
+            
+            .hero-content .lead {
+                font-size: 1.1rem !important;
+            }
+            
+            .image-container {
+                height: 200px !important;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .display-3 {
+                font-size: 2rem !important;
+                line-height: 1.2 !important;
+            }
+            
+            .hero-content .lead {
+                font-size: 1rem !important;
+            }
+            
+            .btn-lg {
+                padding: 12px 24px !important;
+                font-size: 1rem !important;
+            }
+            
+            .image-container {
+                height: 180px !important;
+            }
+            
+            .card-body {
+                padding: 1rem !important;
+            }
+        }
+        
+        /* Original styles enhanced */
         .hover-shadow {
             transition: all 0.3s ease;
         }
         
         .hover-shadow:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 1rem 3rem rgba(0,0,0,.15)!important;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
         }
 
         .filter-btn {
@@ -285,6 +468,72 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        
+        .filter-btn-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(13, 50, 105, 0.3);
+        }
     </style>
+    
+    <!-- Blog Filter Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn-premium');
+        const blogItems = document.querySelectorAll('.blog-item');
+        const noResults = document.getElementById('no-results');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button styling
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.style.background = 'rgba(13, 50, 105, 0.1)';
+                    btn.style.color = '#0d3269';
+                });
+                this.classList.add('active');
+                this.style.background = '#0d3269';
+                this.style.color = 'white';
+                
+                // Filter blog items
+                let visibleCount = 0;
+                blogItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeIn 0.5s ease-in';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                
+                // Show/hide no results message
+                if (visibleCount === 0) {
+                    noResults.classList.remove('d-none');
+                } else {
+                    noResults.classList.add('d-none');
+                }
+            });
+        });
+        
+        // Add hover effects to filter buttons
+        filterButtons.forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                if (!this.classList.contains('active')) {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 4px 12px rgba(13, 50, 105, 0.3)';
+                }
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('active')) {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>
